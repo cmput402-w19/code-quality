@@ -1,10 +1,10 @@
 {
  "actual_commits": 605,
- "commits_with_tests": 167,
+ "commits_with_tests": 169,
  "source_commits": 538,
  "total_lines": 10333,
  "test_lines": 2582,
- "number_of_test_files": 69,
+ "number_of_test_files": 70,
  "test_lines_per_commit": [
   0,
   0,
@@ -535,8 +535,8 @@
   -56,
   -3,
   0,
-  0,
-  0,
+  10,
+  -10,
   -3,
   0,
   0,

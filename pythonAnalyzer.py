@@ -2,7 +2,9 @@ from pydriller import RepositoryMining, GitRepository
 import json
 import os
 
-
+# not using https://github.com/satwikkansal/wtfpython
+# https://github.com/wangshub/wechat_jump_game
+# https://github.com/sqlmapproject/sqlmap
 class RepoStats:
     def __init__(self, *args, **kwargs):
         self.commits_with_tests = 0
@@ -20,10 +22,15 @@ class RepoStats:
         repo_name = extractRepoName(repo_path)
         if os.path.isfile('./results/'+extractRepoName(repo_path)+'.json'):
             return
+
+        file = open('./results/'+extractRepoName(repo_path)+'.json', 'w')
+        file.close()        
         if repo_name == "ansible":
             branch = 'devel'
         elif repo_name == 'home-assistant':
             branch = 'dev'
+        elif repo_name == 'glances':
+            branch = 'develop'
         else:
             branch = 'master'
         self.repo = RepositoryMining('./repos/{}'.format(repo_name), only_in_branch=branch, only_modifications_with_file_types=['.py'])
@@ -52,7 +59,7 @@ class RepoStats:
         return 'test' in path
 
     def check_test_filename(self, file_name: str):
-        return 'test_' in file_name
+        return 'test_' in file_name or 'test' in file_name
 
     def count_modification_stats(self,modification, commit):
         if self.commits.get(commit.hash) is None:
