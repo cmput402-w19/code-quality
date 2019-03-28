@@ -1,4 +1,4 @@
-from pydriller import RepositoryMining
+from pydriller import RepositoryMining, GitRepository
 import json
 import os
 
@@ -13,6 +13,7 @@ class RepoStats:
         self.total_lines_per_commit = []
         self.test_files = {}
         self.commits = {}
+        self.actual_commits = 0
         self.repo = None
         return super().__init__(*args, **kwargs)    
     def analyze(self, repo_path):
@@ -28,14 +29,19 @@ class RepoStats:
         for commit in self.repo.traverse_commits():
             self.analyze_commit(commit)         
             self.total_commits += 1
+            if self.total_commits % 1000 == 0:
+                print("Working on commit {}".format(self.total_commits))
+        self.actual_repo = GitRepository('./repos/{}'.format(repo_name))
+        self.actual_commits = len(list(self.actual_repo.get_list_commits(branch=branch)))
         file_out = {
+            'actual_commits': self.actual_commits,
             "commits_with_tests":self.commits_with_tests,
-            "total_commits" : self.total_commits,
+            "source_commits" : self.total_commits,
             "total_lines": self.total_lines_net,
             "test_lines": self.test_lines_net,
             "number_of_test_files": len(self.test_files.keys()),
             'test_lines_per_commit': self.test_lines_per_commit,
-            'total_lines_per_commit': self.total_lines_per_commit
+            'total_lines_per_commit': self.total_lines_per_commit,
         }
         file = open('./results/'+extractRepoName(repo_path)+'.json', 'w')
         file.write(json.dumps(file_out, indent=1))
