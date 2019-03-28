@@ -22,10 +22,11 @@ class RepoStats:
             return
         if repo_name == "ansible":
             branch = 'devel'
+        elif repo_name == 'home-assistant':
+            branch = 'dev'
         else:
             branch = 'master'
         self.repo = RepositoryMining('./repos/{}'.format(repo_name), only_in_branch=branch, only_modifications_with_file_types=['.py'])
-    
         for commit in self.repo.traverse_commits():
             self.analyze_commit(commit)         
             self.total_commits += 1
