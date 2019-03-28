@@ -102,6 +102,7 @@ def main():
         repoURLs.append(line)
     reposFile.close()
     for repo in repoURLs:
+        print("Starting {}".format(repo))
         repo_stats = RepoStats()
         repo_stats.analyze(repo)
         print("Done {}".format(repo))
