@@ -1,0 +1,7 @@
+gitdb2==2.0.5
+GitPython==2.1.11
+lizard==1.16.3
+PyDriller==1.7
+pytz==2018.9
+smmap2==2.0.5
+typing==3.6.6
