@@ -1,5 +1,6 @@
 from pydriller import RepositoryMining
 import json
+import os
 
 
 class RepoStats:
@@ -15,7 +16,14 @@ class RepoStats:
         self.repo = None
         return super().__init__(*args, **kwargs)    
     def analyze(self, repo_path):
-        self.repo = RepositoryMining(repo_path, only_in_branch='master', only_modifications_with_file_types=['.py'])
+        repo_name = extractRepoName(repo_path)
+        if os.path.isfile('./results/'+extractRepoName(repo_path)+'.json'):
+            return
+        if repo_name == "ansible":
+            branch = 'devel'
+        else:
+            branch = 'master'
+        self.repo = RepositoryMining('./repos/{}'.format(repo_name), only_in_branch=branch, only_modifications_with_file_types=['.py'])
     
         for commit in self.repo.traverse_commits():
             self.analyze_commit(commit)         
@@ -29,7 +37,7 @@ class RepoStats:
             'test_lines_per_commit': self.test_lines_per_commit,
             'total_lines_per_commit': self.total_lines_per_commit
         }
-        file = open(extractRepoName(repo_path)+'.json', 'w')
+        file = open('./results/'+extractRepoName(repo_path)+'.json', 'w')
         file.write(json.dumps(file_out, indent=1))
         file.close()
 
@@ -82,12 +90,11 @@ def extractRepoName(url):
 
 
 def main():
-    repoURLs = [
-        "https://github.com/pallets/flask.git",
-        "https://github.com/nvbn/thefuck.git",
-        "https://github.com/jakubroztocil/httpie.git",
-    ]
-
+    reposFile = open('pythonrepolist.txt', 'r')
+    repoURLs = []
+    for line in reposFile:
+        repoURLs.append(line)
+    reposFile.close()
     for repo in repoURLs:
         repo_stats = RepoStats()
         repo_stats.analyze(repo)
