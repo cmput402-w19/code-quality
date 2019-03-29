@@ -15,7 +15,7 @@ class RepoStats:
         self.repo = None
         return super().__init__(*args, **kwargs)    
     def analyze(self, repo_path):
-        self.repo = RepositoryMining(repo_path, only_in_branch='master', only_modifications_with_file_types=['.py'])
+        self.repo = RepositoryMining(repo_path, only_in_branch='master', only_modifications_with_file_types=['.py', '.java'])
     
         for commit in self.repo.traverse_commits():
             self.analyze_commit(commit)         
