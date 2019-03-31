@@ -37,10 +37,12 @@ class RepoStats:
             branch = 'dev'
         elif repo_name == 'glances':
             branch = 'develop'
+        elif repo_name.lower() == 'rxjava':
+            branch = '2.x'
         else:
             branch = 'master'
-
-        self.repo = RepositoryMining('./repos/{}'.format(repo_name), only_in_branch='master', only_modifications_with_file_types=[repo_type])
+            
+        self.repo = RepositoryMining('./repos/{}'.format(repo_name), only_in_branch=branch, only_modifications_with_file_types=[repo_type])
    
         for commit in self.repo.traverse_commits():
             self.analyze_commit(commit)         
