@@ -30,4 +30,6 @@ ax.scatter(x, y)
 
 ax.set(xlabel="Commits", ylabel="Commits With Tests", title="Commits With Tests vs Commits for All Repositories")
 ax.grid()
+ax.set_ylim(bottom=0)
+ax.set_xlim(left=0)
 plt.show()

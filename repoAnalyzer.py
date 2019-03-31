@@ -61,13 +61,11 @@ class RepoStats:
 
         for modification in commit.modifications:
             if modification.new_path is None and (self.check_test_path(modification.old_path) and self.check_test_filename(modification.filename)): # Deleted test file 
-                    full_path = modification.old_path
-                    self.count_modification_stats(modification, commit)
+                    #self.count_modification_stats(modification, commit)
                     test_lines_in_commit += modification.added - modification.removed
                     delta_test_files_in_commit -= 1
 
             if modification.old_path is None and (self.check_test_path(modification.new_path) and self.check_test_filename(modification.filename)): # Added test file 
-                    full_path = modification.old_path
                     self.count_modification_stats(modification, commit)
                     test_lines_in_commit += modification.added - modification.removed
                     delta_test_files_in_commit += 1
@@ -97,8 +95,8 @@ def extractRepoName(url):
 
 def main():
     repoURLs = [
-#        "https://github.com/square/retrofit.git"
-        "https://github.com/pallets/flask.git",
+        "https://github.com/square/retrofit.git"
+#        "https://github.com/pallets/flask.git",
 #        "https://github.com/nvbn/thefuck.git",
 #        "https://github.com/jakubroztocil/httpie.git",
     ]

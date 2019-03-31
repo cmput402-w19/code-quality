@@ -30,4 +30,6 @@ ax.scatter(x, y)
 
 ax.set(xlabel="Commits", ylabel="Total Test Related LOC", title="Total Test Lines vs Commits for All Repositories")
 ax.grid()
+ax.set_ylim(bottom=0)
+ax.set_xlim(left=0)
 plt.show()
