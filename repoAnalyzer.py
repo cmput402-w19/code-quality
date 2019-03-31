@@ -49,7 +49,7 @@ class RepoStats:
     def count_modification_stats(self,modification, commit):
         if self.commits.get(commit.hash) is None:
             self.commits[commit.hash] = True
-            self.commits_with_tests += 1
+            self.commits_with_tests += 1    # If a test file gets deleted, does this count as a commit with a test?
         # get test lines
         self.test_lines_net += modification.added - modification.removed
         
@@ -61,7 +61,7 @@ class RepoStats:
 
         for modification in commit.modifications:
             if modification.new_path is None and (self.check_test_path(modification.old_path) and self.check_test_filename(modification.filename)): # Deleted test file 
-                    #self.count_modification_stats(modification, commit)
+                    self.count_modification_stats(modification, commit)
                     test_lines_in_commit += modification.added - modification.removed
                     delta_test_files_in_commit -= 1
 
@@ -95,8 +95,8 @@ def extractRepoName(url):
 
 def main():
     repoURLs = [
-        "https://github.com/square/retrofit.git"
-#        "https://github.com/pallets/flask.git",
+        "https://github.com/square/retrofit.git",
+        "https://github.com/pallets/flask.git",
 #        "https://github.com/nvbn/thefuck.git",
 #        "https://github.com/jakubroztocil/httpie.git",
     ]
