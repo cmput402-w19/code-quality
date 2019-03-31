@@ -10,14 +10,15 @@ class RepoStats:
         self.test_lines_net = 0
         self.test_lines_per_commit = []
         self.total_lines_per_commit = []
-        self.test_files = {}
+        self.test_files = 0
         self.total_files = 0
         self.commits = {}
         self.repo = None
         return super().__init__(*args, **kwargs)    
+
     def analyze(self, repo_path):
         self.repo = RepositoryMining(repo_path, only_in_branch='master', only_modifications_with_file_types=['.py', '.java'])
-    
+   
         for commit in self.repo.traverse_commits():
             self.analyze_commit(commit)         
             self.total_commits += 1
@@ -26,8 +27,8 @@ class RepoStats:
             "total_commits" : self.total_commits,
             "total_lines": self.total_lines_net,
             "test_lines": self.test_lines_net,
-            "number_of_test_files": len(self.test_files.keys()),
-            "number_of_total_files": len(self.total_files.keys()),
+            "number_of_test_files": self.test_files,
+            "number_of_total_files": self.total_files,
             'test_lines_per_commit': self.test_lines_per_commit,
             'total_lines_per_commit': self.total_lines_per_commit
         }
@@ -36,10 +37,10 @@ class RepoStats:
         file.close()
 
     def check_test_path(self, path: str):
-        return 'test' in path
+        return 'test' in path or "Test" in path
 
     def check_test_filename(self, file_name: str):
-        return 'test_' in file_name
+        return 'test_' in file_name or "Test" in file_name
 
     def count_modification_stats(self,modification, commit):
         if self.commits.get(commit.hash) is None:
@@ -52,32 +53,27 @@ class RepoStats:
         test_lines_in_commit = 0
         total_lines_in_commit = 0
         for modification in commit.modifications:
-            if modification.new_path is not None and (self.check_test_path(modification.new_path) and self.check_test_filename(modification.filename)):
-                full_path = modification.new_path
-                self.count_modification_stats(modification, commit)
-                test_lines_in_commit += modification.added - modification.removed
-                if self.test_files.get(full_path) is None:
-                    self.test_files[full_path] = 1
-                else:
-                    self.test_files[full_path] += 1
-        
-            if modification.new_path is None and (self.check_test_path(modification.old_path) and self.check_test_filename(modification.filename)):
+            if modification.new_path is None and (self.check_test_path(modification.old_path) and self.check_test_filename(modification.filename)): # Deleted test file 
                     full_path = modification.old_path
                     self.count_modification_stats(modification, commit)
                     test_lines_in_commit += modification.added - modification.removed
-                    if self.test_files.get(full_path) is None:
-                        self.test_files[full_path] = 1
-                    else:
-                        self.test_files[full_path] += 1
+                    self.test_files -= 1
+
+            if modification.old_path is None and "Test" in modification.new_path:#(self.check_test_path(modification.new_path) and self.check_test_filename(modification.filename)): # Added test file 
+                    full_path = modification.old_path
+                    self.count_modification_stats(modification, commit)
+                    test_lines_in_commit += modification.added - modification.removed
+                    self.test_files += 1
+
+
+
             total_lines_in_commit += modification.added - modification.removed
             self.total_lines_net += modification.added - modification.removed
 
-            if modification.ModificationType == 1:  # Added
+            if modification.old_path is None: # File added
                 self.total_files += 1
-            if modification.ModificationType == 4:  # Deleted
+            if modification.new_path is None: # File deleted
                 self.total_files -= 1
-
-
 
         self.test_lines_per_commit.append(test_lines_in_commit)
         self.total_lines_per_commit.append(total_lines_in_commit)
