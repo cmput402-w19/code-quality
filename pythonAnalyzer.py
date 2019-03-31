@@ -11,6 +11,7 @@ class RepoStats:
         self.test_lines_per_commit = []
         self.total_lines_per_commit = []
         self.test_files = {}
+        self.total_files = 0
         self.commits = {}
         self.repo = None
         return super().__init__(*args, **kwargs)    
@@ -26,6 +27,7 @@ class RepoStats:
             "total_lines": self.total_lines_net,
             "test_lines": self.test_lines_net,
             "number_of_test_files": len(self.test_files.keys()),
+            "number_of_total_files": len(self.total_files.keys()),
             'test_lines_per_commit': self.test_lines_per_commit,
             'total_lines_per_commit': self.total_lines_per_commit
         }
@@ -69,6 +71,13 @@ class RepoStats:
                         self.test_files[full_path] += 1
             total_lines_in_commit += modification.added - modification.removed
             self.total_lines_net += modification.added - modification.removed
+
+            if modification.ModificationType == 1:  # Added
+                self.total_files += 1
+            if modification.ModificationType == 4:  # Deleted
+                self.total_files -= 1
+
+
 
         self.test_lines_per_commit.append(test_lines_in_commit)
         self.total_lines_per_commit.append(total_lines_in_commit)
