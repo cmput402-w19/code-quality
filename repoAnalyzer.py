@@ -13,12 +13,16 @@ class RepoStats:
         self.test_lines_net = 0
         self.test_lines_per_commit = []
         self.total_lines_per_commit = []
-        self.test_files = {}
+        self.test_files = 0
+        self.total_files = 0
+        self.test_files_per_commit = []
+        self.files_per_commit = []
         self.commits = {}
         self.actual_commits = 0
         self.repo = None
         return super().__init__(*args, **kwargs)    
-    def analyze(self, repo_path):
+
+    def analyze(self, repo_path, repo_type):
         repo_name = extractRepoName(repo_path)
         if os.path.isfile('./results/'+extractRepoName(repo_path)+'.json'):
             return
@@ -34,6 +38,9 @@ class RepoStats:
         else:
             branch = 'master'
         self.repo = RepositoryMining('./repos/{}'.format(repo_name), only_in_branch=branch, only_modifications_with_file_types=['.py'])
+
+        self.repo = RepositoryMining(repo_path, only_in_branch='master', only_modifications_with_file_types=[repo_type])
+   
         for commit in self.repo.traverse_commits():
             self.analyze_commit(commit)         
             self.total_commits += 1
@@ -47,7 +54,10 @@ class RepoStats:
             "source_commits" : self.total_commits,
             "total_lines": self.total_lines_net,
             "test_lines": self.test_lines_net,
-            "number_of_test_files": len(self.test_files.keys()),
+            "number_of_test_files": self.test_files,
+            "number_of_total_files": self.total_files,
+            "number_of_test_files_per_commit": self.test_files_per_commit,
+            "number_of_files_per_commit": self.files_per_commit,
             'test_lines_per_commit': self.test_lines_per_commit,
             'total_lines_per_commit': self.total_lines_per_commit,
         }
@@ -56,45 +66,51 @@ class RepoStats:
         file.close()
 
     def check_test_path(self, path: str):
-        return 'test' in path
+        return 'test' in path or "Test" in path
 
     def check_test_filename(self, file_name: str):
-        return 'test_' in file_name or 'test' in file_name
+        return 'test_' in file_name.lower() or 'test' in file_name.lower()
+
 
     def count_modification_stats(self,modification, commit):
         if self.commits.get(commit.hash) is None:
             self.commits[commit.hash] = True
-            self.commits_with_tests += 1
+            self.commits_with_tests += 1    # If a test file gets deleted, does this count as a commit with a test?
         # get test lines
         self.test_lines_net += modification.added - modification.removed
         
     def analyze_commit(self, commit):
         test_lines_in_commit = 0
         total_lines_in_commit = 0
+        delta_files_in_commit = 0
+        delta_test_files_in_commit = 0
+
         for modification in commit.modifications:
-            if modification.new_path is not None and (self.check_test_path(modification.new_path) and self.check_test_filename(modification.filename)):
-                full_path = modification.new_path
-                self.count_modification_stats(modification, commit)
-                test_lines_in_commit += modification.added - modification.removed
-                if self.test_files.get(full_path) is None:
-                    self.test_files[full_path] = 1
-                else:
-                    self.test_files[full_path] += 1
-        
-            if modification.new_path is None and (self.check_test_path(modification.old_path) and self.check_test_filename(modification.filename)):
-                    full_path = modification.old_path
+            if modification.new_path is None and (self.check_test_path(modification.old_path) and self.check_test_filename(modification.filename)): # Deleted test file 
                     self.count_modification_stats(modification, commit)
                     test_lines_in_commit += modification.added - modification.removed
-                    if self.test_files.get(full_path) is None:
-                        self.test_files[full_path] = 1
-                    else:
-                        self.test_files[full_path] += 1
+                    delta_test_files_in_commit -= 1
+
+            if modification.old_path is None and (self.check_test_path(modification.new_path) and self.check_test_filename(modification.filename)): # Added test file 
+                    self.count_modification_stats(modification, commit)
+                    test_lines_in_commit += modification.added - modification.removed
+                    delta_test_files_in_commit += 1
+
+            if modification.old_path is None: # File added
+                delta_files_in_commit += 1
+            if modification.new_path is None: # File deleted
+                delta_files_in_commit -= 1
+
             total_lines_in_commit += modification.added - modification.removed
             self.total_lines_net += modification.added - modification.removed
 
+        self.test_files += delta_test_files_in_commit
+        self.total_files += delta_files_in_commit
+
         self.test_lines_per_commit.append(test_lines_in_commit)
         self.total_lines_per_commit.append(total_lines_in_commit)
-
+        self.test_files_per_commit.append(delta_test_files_in_commit)
+        self.files_per_commit.append(delta_files_in_commit)
         
         
 def extractRepoName(url):
@@ -104,15 +120,31 @@ def extractRepoName(url):
 
 
 def main():
+    print('Working on Java')
+    reposFile = open('javaRepos.txt', 'r')
+    repoURLs = []
+    for line in reposFile:
+        repoURLs.append(line)
+    reposFile.close()
+
+    for repo in repoURLs:
+        print("Starting {}".format(repo))
+        repo_stats = RepoStats()
+        repo_stats.analyze(repo, '.java')
+        print("Done {}".format(repo))
+    return 
+
+    print("Working on python")
     reposFile = open('pythonrepolist.txt', 'r')
     repoURLs = []
     for line in reposFile:
         repoURLs.append(line)
     reposFile.close()
+
     for repo in repoURLs:
         print("Starting {}".format(repo))
         repo_stats = RepoStats()
-        repo_stats.analyze(repo)
+        repo_stats.analyze(repo, '.py')
         print("Done {}".format(repo))
 
 main()
