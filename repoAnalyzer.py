@@ -5,6 +5,8 @@ import os
 # not using https://github.com/satwikkansal/wtfpython
 # https://github.com/wangshub/wechat_jump_game
 # https://github.com/sqlmapproject/sqlmap
+# https://github.com/sivel/speedtest-cli
+# https://github.com/mahmoud/awesome-python-applications
 class RepoStats:
     def __init__(self, *args, **kwargs):
         self.commits_with_tests = 0
@@ -37,9 +39,8 @@ class RepoStats:
             branch = 'develop'
         else:
             branch = 'master'
-        self.repo = RepositoryMining('./repos/{}'.format(repo_name), only_in_branch=branch, only_modifications_with_file_types=['.py'])
 
-        self.repo = RepositoryMining(repo_path, only_in_branch='master', only_modifications_with_file_types=[repo_type])
+        self.repo = RepositoryMining('./repos/{}'.format(repo_name), only_in_branch='master', only_modifications_with_file_types=[repo_type])
    
         for commit in self.repo.traverse_commits():
             self.analyze_commit(commit)         
@@ -60,6 +61,7 @@ class RepoStats:
             "number_of_files_per_commit": self.files_per_commit,
             'test_lines_per_commit': self.test_lines_per_commit,
             'total_lines_per_commit': self.total_lines_per_commit,
+            'head_commit': self.actual_repo.get_head().hash
         }
         file = open('./results/'+extractRepoName(repo_path)+'.json', 'w')
         file.write(json.dumps(file_out, indent=1))
