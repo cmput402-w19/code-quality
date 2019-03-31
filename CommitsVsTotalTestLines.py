@@ -1,14 +1,13 @@
+# Given a .json file, creates a line graph of Total Test Lines Per Commit
+
 import json
 import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
 
-fp = open("retrofit.json", "r")
+fp = open("flask.json", "r")
 data = json.load(fp)
 fp.close()
-
-for i in data:
-    print(i)
 
 xData = []
 yData = []
@@ -24,6 +23,6 @@ y = yData
 fig, ax = plt.subplots()
 ax.plot(x, y)
 
-ax.set(xlabel="commits", ylabel="Test related LOC", title="Test lines over commits")
+ax.set(xlabel="Commit #", ylabel="Total Test Related LOC", title="Total Test Lines Per Commit")
 ax.grid()
 plt.show()
