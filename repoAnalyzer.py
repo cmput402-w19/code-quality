@@ -12,6 +12,8 @@ class RepoStats:
         self.total_lines_per_commit = []
         self.test_files = 0
         self.total_files = 0
+        self.test_files_per_commit = []
+        self.files_per_commit = []
         self.commits = {}
         self.repo = None
         return super().__init__(*args, **kwargs)    
@@ -29,6 +31,8 @@ class RepoStats:
             "test_lines": self.test_lines_net,
             "number_of_test_files": self.test_files,
             "number_of_total_files": self.total_files,
+            "number_of_test_files_per_commit": self.test_files_per_commit,
+            "number_of_files_per_commit": self.files_per_commit,
             'test_lines_per_commit': self.test_lines_per_commit,
             'total_lines_per_commit': self.total_lines_per_commit
         }
@@ -52,32 +56,37 @@ class RepoStats:
     def analyze_commit(self, commit):
         test_lines_in_commit = 0
         total_lines_in_commit = 0
+        delta_files_in_commit = 0
+        delta_test_files_in_commit = 0
+
         for modification in commit.modifications:
             if modification.new_path is None and (self.check_test_path(modification.old_path) and self.check_test_filename(modification.filename)): # Deleted test file 
                     full_path = modification.old_path
                     self.count_modification_stats(modification, commit)
                     test_lines_in_commit += modification.added - modification.removed
-                    self.test_files -= 1
+                    delta_test_files_in_commit -= 1
 
-            if modification.old_path is None and "Test" in modification.new_path:#(self.check_test_path(modification.new_path) and self.check_test_filename(modification.filename)): # Added test file 
+            if modification.old_path is None and (self.check_test_path(modification.new_path) and self.check_test_filename(modification.filename)): # Added test file 
                     full_path = modification.old_path
                     self.count_modification_stats(modification, commit)
                     test_lines_in_commit += modification.added - modification.removed
-                    self.test_files += 1
+                    delta_test_files_in_commit += 1
 
-
+            if modification.old_path is None: # File added
+                delta_files_in_commit += 1
+            if modification.new_path is None: # File deleted
+                delta_files_in_commit -= 1
 
             total_lines_in_commit += modification.added - modification.removed
             self.total_lines_net += modification.added - modification.removed
 
-            if modification.old_path is None: # File added
-                self.total_files += 1
-            if modification.new_path is None: # File deleted
-                self.total_files -= 1
+        self.test_files += delta_test_files_in_commit
+        self.total_files += delta_files_in_commit
 
         self.test_lines_per_commit.append(test_lines_in_commit)
         self.total_lines_per_commit.append(total_lines_in_commit)
-
+        self.test_files_per_commit.append(delta_test_files_in_commit)
+        self.files_per_commit.append(delta_files_in_commit)
         
         
 def extractRepoName(url):
@@ -88,9 +97,10 @@ def extractRepoName(url):
 
 def main():
     repoURLs = [
+#        "https://github.com/square/retrofit.git"
         "https://github.com/pallets/flask.git",
-        "https://github.com/nvbn/thefuck.git",
-        "https://github.com/jakubroztocil/httpie.git",
+#        "https://github.com/nvbn/thefuck.git",
+#        "https://github.com/jakubroztocil/httpie.git",
     ]
 
     for repo in repoURLs:
