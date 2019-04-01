@@ -33,14 +33,16 @@ class RepoStats:
             branch = 'devel'
         elif repo_name == 'home-assistant' or repo_name == 'HikariCP':
             branch = 'dev'
-        elif repo_name == 'glances' or repo_name == 'androidannotations':
+        elif repo_name == 'glances' or repo_name == 'androidannotations' or repo_name == 'zaproxy' or repo_name == 'fescar':
             branch = 'develop'
-        elif repo_name.lower() == 'rxjava':
+        elif repo_name.lower() == 'rxjava' or repo_name == 'dex2jar':
             branch = '2.x'
         elif repo_name.lower() == 'exoplayer':
             branch = 'release-v2'
         elif repo_name == 'hadoop':
             branch = 'trunk'
+        elif repo_name == 'mockito':
+            branch = 'release/2.x'
         else:
             branch = 'master'
             
