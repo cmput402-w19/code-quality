@@ -28,22 +28,25 @@ class RepoStats:
         repo_name = extractRepoName(repo_path)
         if os.path.isfile('./results/'+extractRepoName(repo_path)+'.json'):
             return
-
-        file = open('./results/'+extractRepoName(repo_path)+'.json', 'w')
-        file.close()        
-        if repo_name == "ansible":
+       
+        if repo_name == "ansible" or repo_name == 'dbeaver':
             branch = 'devel'
-        elif repo_name == 'home-assistant':
+        elif repo_name == 'home-assistant' or repo_name == 'HikariCP':
             branch = 'dev'
-        elif repo_name == 'glances':
+        elif repo_name == 'glances' or repo_name == 'androidannotations':
             branch = 'develop'
         elif repo_name.lower() == 'rxjava':
             branch = '2.x'
+        elif repo_name.lower() == 'exoplayer':
+            branch = 'release-v2'
+        elif repo_name == 'hadoop':
+            branch = 'trunk'
         else:
             branch = 'master'
             
         self.repo = RepositoryMining('./repos/{}'.format(repo_name), only_in_branch=branch, only_modifications_with_file_types=[repo_type])
-   
+        file = open('./results/'+extractRepoName(repo_path)+'.json', 'w')
+        file.close() 
         for commit in self.repo.traverse_commits():
             self.analyze_commit(commit)         
             self.total_commits += 1

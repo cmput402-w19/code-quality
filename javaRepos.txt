@@ -48,7 +48,6 @@ https://github.com/macrozheng/mall.git
 https://github.com/ksoichiro/Android-ObservableScrollView.git
 https://github.com/alibaba/ARouter.git
 https://github.com/alibaba/vlayout.git
-https://github.com/nathanmarz/storm.git
 https://github.com/prestodb/presto.git
 https://github.com/apache/hadoop.git
 https://github.com/permissions-dispatcher/PermissionsDispatcher.git
@@ -98,4 +97,5 @@ https://github.com/facebook/litho.git
 https://github.com/nhaarman/ListViewAnimations.git
 https://github.com/koush/AndroidAsync.git
 https://github.com/koush/ion.git
+https://github.com/mockito/mockito.git
 
