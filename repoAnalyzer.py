@@ -22,11 +22,12 @@ class RepoStats:
         self.commits = {}
         self.actual_commits = 0
         self.repo = None
-        return super().__init__(*args, **kwargs)    
+        return super().__init__(*args, **kwargs)
 
     def analyze(self, repo_path, repo_type):
         repo_name = extractRepoName(repo_path)
         if os.path.isfile('./results/'+extractRepoName(repo_path)+'.json'):
+            print("?")
             return
         self.repo_type = repo_type
         if repo_name == "ansible" or repo_name == 'dbeaver':
@@ -45,12 +46,34 @@ class RepoStats:
             branch = 'release/2.x'
         else:
             branch = 'master'
-            
+
         self.repo = RepositoryMining('./repos/{}'.format(repo_name), only_in_branch=branch, only_modifications_with_file_types=[repo_type])
         file = open('./results/'+extractRepoName(repo_path)+'.json', 'w')
-        file.close() 
+        file.close()
+
+
+            branch = "gh-pages"
+        if repo_name == "meteor":
+            branch = "devel"
+        if repo_name == "hyper":
+            branch = "canary"
+        if repo_name == "moment":
+            branch = "develop"
+        if repo_name == "paper.js":
+            branch = "develop"
+        if repo_name =="Rocket.Chat":
+            branch = 'develop'
+        if repo_name == "select2":
+            branch="develop"
+        if repo_name == "storybook":
+            branch="next"
+
+        self.repo = RepositoryMining('./repos/{}'.format(repo_name), only_in_branch=branch, only_modifications_with_file_types=[repo_type])
+        file = open('./results/'+extractRepoName(repo_path)+'.json', 'w')
+        file.close()
+
         for commit in self.repo.traverse_commits():
-            self.analyze_commit(commit)         
+            self.analyze_commit(commit)
             self.total_commits += 1
             if self.total_commits % 1000 == 0:
                 print("Working on commit {}".format(self.total_commits))
@@ -87,7 +110,7 @@ class RepoStats:
             self.commits_with_tests += 1    # If a test file gets deleted, does this count as a commit with a test?
         # get test lines
         self.test_lines_net += modification.added - modification.removed
-        
+
     def analyze_commit(self, commit):
         test_lines_in_commit = 0
         total_lines_in_commit = 0
@@ -95,12 +118,12 @@ class RepoStats:
         delta_test_files_in_commit = 0
 
         for modification in commit.modifications:
-            if modification.new_path is None and (self.check_test_path(modification.old_path) and self.check_test_filename(modification.filename)): # Deleted test file 
+            if modification.new_path is None and (self.check_test_path(modification.old_path) and self.check_test_filename(modification.filename)): # Deleted test file
                     self.count_modification_stats(modification, commit)
                     test_lines_in_commit += modification.added - modification.removed
                     delta_test_files_in_commit -= 1
 
-            if modification.old_path is None and (self.check_test_path(modification.new_path) and self.check_test_filename(modification.filename)): # Added test file 
+            if modification.old_path is None and (self.check_test_path(modification.new_path) and self.check_test_filename(modification.filename)): # Added test file
                     self.count_modification_stats(modification, commit)
                     test_lines_in_commit += modification.added - modification.removed
                     delta_test_files_in_commit += 1
@@ -120,8 +143,8 @@ class RepoStats:
         self.total_lines_per_commit.append(total_lines_in_commit)
         self.test_files_per_commit.append(delta_test_files_in_commit)
         self.files_per_commit.append(delta_files_in_commit)
-        
-        
+
+
 def extractRepoName(url):
     url = url.split(".git")[0]
     url = url.split("/")[-1]
@@ -155,5 +178,19 @@ def main():
         repo_stats = RepoStats()
         repo_stats.analyze(repo, '.py')
         print("Done {}".format(repo))
+
+    print('Working on javaScriptRepos')
+    reposFile = open('javaScriptRepos.txt', 'r')
+    repoURLs = []
+    for line in reposFile:
+        repoURLs.append(line)
+    reposFile.close()
+
+    for repo in repoURLs:
+        print("Starting {}".format(repo))
+        repo_stats = RepoStats()
+        repo_stats.analyze(repo, '.js')
+        print("Done {}".format(repo))
+    return
 
 main()
