@@ -1,0 +1,15 @@
+https://github.com/addyosmani/basket.js.git
+https://github.com/ElemeFE/element.git
+https://github.com/meteor/meteor.git
+https://github.com/zeit/hyper.git
+https://github.com/moment/moment.git
+https://github.com/paperjs/paper.js.git
+https://github.com/pixijs/pixi.js.git
+https://github.com/RocketChat/Rocket.Chat.git
+https://github.com/select2/select2.git
+https://github.com/spine/spine.git
+https://github.com/storybooks/storybook.git
+https://github.com/mrdoob/three.js.git
+https://github.com/Tonejs/Tone.js.git
+https://github.com/jonobr1/two.js.git
+
