@@ -28,7 +28,7 @@ class RepoStats:
         repo_name = extractRepoName(repo_path)
         if os.path.isfile('./results/'+extractRepoName(repo_path)+'.json'):
             return
-       
+        self.repo_type = repo_type
         if repo_name == "ansible" or repo_name == 'dbeaver':
             branch = 'devel'
         elif repo_name == 'home-assistant' or repo_name == 'HikariCP':
@@ -75,10 +75,10 @@ class RepoStats:
         file.close()
 
     def check_test_path(self, path: str):
-        return 'test' in path or "Test" in path
+        return self.repo_type in path and ('test' in path or "Test" in path)
 
     def check_test_filename(self, file_name: str):
-        return 'test_' in file_name.lower() or 'test' in file_name.lower()
+        return self.repo_type in file_name and ('test_' in file_name.lower() or 'test' in file_name.lower())
 
 
     def count_modification_stats(self,modification, commit):
