@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/Android-CleanArchitecture" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/EventBus" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/ExoPlayer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/FizzBuzzEnterpriseEdition" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/HanLP" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/JCSprout" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/MPAndroidChart" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/RxJava" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/Signal-Android" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/Telegram" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/androidannotations" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/apollo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/arthas" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/butterknife" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/deeplearning4j" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/druid" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/elasticsearch" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/fresco" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/glide" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/greenDAO" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/guava" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/incubator-dubbo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/java-design-patterns" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/jenkins" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/leakcanary" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/logger" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/lottie-android" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/okhttp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/realm-java" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/retrofit" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/spring-boot" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/spring-boot-examples" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/spring-framework" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/stetho" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/tutorials" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/zipkin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/zxing" vcs="Git" />
+  </component>
+</project>
