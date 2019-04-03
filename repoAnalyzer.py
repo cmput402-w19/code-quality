@@ -26,7 +26,7 @@ class RepoStats:
 
     def analyze(self, repo_path, repo_type):
         repo_name = extractRepoName(repo_path)
-        if os.path.isfile('./results/'+extractRepoName(repo_path)+'.json'):
+        if os.path.isfile('./results/{}/'.format(repo_type)+extractRepoName(repo_path)+'.json'):
             print("?")
             return
         self.repo_type = repo_type
@@ -49,7 +49,38 @@ class RepoStats:
         if repo_name == 'netty':
             branch = '4.1'
 
-
+        if repo_name == "vue":
+            branch = "dev"
+        elif repo_name =="two.js":
+            branch = "dev"
+        elif repo_name =="spine":
+            branch = "dev"
+        elif repo_name == "pixi.js":
+            branch = "dev"
+        elif repo_name == "Tone.js":
+            branch = "dev"
+        elif repo_name == "three.js":
+            branch = "dev"
+        elif repo_name == "basket.js":
+            branch = "gh-pages"
+        elif repo_name == "meteor":
+            branch = "devel"
+        elif repo_name == "hyper":
+            branch = "canary"
+        elif repo_name == "moment":
+            branch = "develop"
+        elif repo_name == "paper.js":
+            branch = "develop"
+        elif repo_name =="Rocket.Chat":
+            branch = 'develop'
+        elif repo_name == "select2":
+            branch="develop"
+        elif repo_name == "storybook":
+            branch="next"
+        elif repo_name == "element":
+            branch="dev"
+        else:
+            branch = 'master'
         if repo_name == 'basket.js':
             branch = "gh-pages"
         if repo_name == "meteor":
@@ -86,10 +117,12 @@ class RepoStats:
             branch = "develop"
         if repo_name == "pyro":
             branch = "dev"
+        if repo_name == 'vue':
+            branch = 'dev'
 
 
         self.repo = RepositoryMining('./repos/{}'.format(repo_name), only_in_branch=branch, only_modifications_with_file_types=[repo_type])
-        file = open('./results/'+extractRepoName(repo_path)+'.json', 'w')
+        file = open('./results/{}/'.format(repo_type)+extractRepoName(repo_path)+'.json', 'w')
         file.close()
 
         for commit in self.repo.traverse_commits():
@@ -113,7 +146,7 @@ class RepoStats:
             'total_lines_per_commit': self.total_lines_per_commit,
             'head_commit': self.actual_repo.get_head().hash
         }
-        file = open('./results/'+extractRepoName(repo_path)+'.json', 'w')
+        file = open('./results/{}/'.format(repo_type)+extractRepoName(repo_path)+'.json', 'w')
         file.write(json.dumps(file_out, indent=1))
         file.close()
 
@@ -143,7 +176,7 @@ class RepoStats:
                     test_lines_in_commit += modification.added - modification.removed
                     delta_test_files_in_commit -= 1
 
-            if modification.old_path is None and (self.check_test_path(modification.new_path) and self.check_test_filename(modification.filename)): # Added test file
+            elif modification.old_path is None and (self.check_test_path(modification.new_path) and self.check_test_filename(modification.filename)): # Added test file
                     self.count_modification_stats(modification, commit)
                     test_lines_in_commit += modification.added - modification.removed
                     delta_test_files_in_commit += 1

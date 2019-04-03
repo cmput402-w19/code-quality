@@ -1,10 +1,12 @@
 {
  "actual_commits": 1676,
- "test_lines": 0,
+ "commits_with_tests": 0,
  "source_commits": 210,
- "number_of_test_files": 0,
  "total_lines": -38053,
- "test_lines_per_commit": [
+ "test_lines": 0,
+ "number_of_test_files": 0,
+ "number_of_total_files": -89,
+ "number_of_test_files_per_commit": [
   0,
   0,
   0,
@@ -428,7 +430,7 @@
   -5,
   -4
  ],
- "number_of_test_files_per_commit": [
+ "test_lines_per_commit": [
   0,
   0,
   0,
@@ -640,9 +642,6 @@
   0,
   0
  ],
- "commits_with_tests": 0,
- "head_commit": "19c3b6b9ae4e3a07d60b460d2586533515982d86",
- "number_of_total_files": -89,
  "total_lines_per_commit": [
   21054,
   334,
@@ -854,5 +853,6 @@
   -631,
   -631,
   -408
- ]
+ ],
+ "head_commit": "19c3b6b9ae4e3a07d60b460d2586533515982d86"
 }
