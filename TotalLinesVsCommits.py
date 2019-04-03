@@ -46,7 +46,7 @@ def makeGraph(f, data, fileType, fileName):
 fileTypes = ["java"]
 
 try:
-    os.mkdir("./results/" + graphName +")
+    os.mkdir("./results/" + graphName +)
 except:
     pass
 
