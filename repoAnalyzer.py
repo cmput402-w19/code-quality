@@ -67,6 +67,27 @@ class RepoStats:
             branch="develop"
         if repo_name == "storybook":
             branch="next"
+        if repo_name == "fabric":
+            branch="2.0"
+        if repo_name == "powerline":
+            branch = "develop"
+        if repo_name == "salt":
+            branch = "develop"
+        if repo_name == "AiLearning":
+            branch = "dev"
+        if repo_name == "gensim":
+            branch = "develop"
+        if repo_name == "nltk":
+            branch = "develop"
+        if repo_name == "boto":
+            branch = "develop"
+        if repo_name == "TextBlob":
+            branch = "dev"
+        if repo_name == "pyinstaller":
+            branch = "develop"
+        if repo_name == "pyro":
+            branch = "dev"
+
 
         self.repo = RepositoryMining('./repos/{}'.format(repo_name), only_in_branch=branch, only_modifications_with_file_types=[repo_type])
         file = open('./results/'+extractRepoName(repo_path)+'.json', 'w')
@@ -152,20 +173,20 @@ def extractRepoName(url):
 
 
 def main():
-    print('Working on Java')
-    reposFile = open('javaRepos.txt', 'r')
-    repoURLs = []
-    for line in reposFile:
-        repoURLs.append(line)
-    reposFile.close()
-
-    for repo in repoURLs:
-        print("Starting {}".format(repo))
-        repo_stats = RepoStats()
-        repo_stats.analyze(repo, '.java')
-        print("Done {}".format(repo))
-    return 
-
+#    print('Working on Java')
+#    reposFile = open('javaRepos.txt', 'r')
+#    repoURLs = []
+#    for line in reposFile:
+#        repoURLs.append(line)
+#    reposFile.close()
+#
+#    for repo in repoURLs:
+#        print("Starting {}".format(repo))
+#        repo_stats = RepoStats()
+#        repo_stats.analyze(repo, '.java')
+#        print("Done {}".format(repo))
+#    return 
+#
     print("Working on python")
     reposFile = open('pythonrepolist.txt', 'r')
     repoURLs = []
@@ -179,18 +200,18 @@ def main():
         repo_stats.analyze(repo, '.py')
         print("Done {}".format(repo))
 
-    print('Working on javaScriptRepos')
-    reposFile = open('javaScriptRepos.txt', 'r')
-    repoURLs = []
-    for line in reposFile:
-        repoURLs.append(line)
-    reposFile.close()
-
-    for repo in repoURLs:
-        print("Starting {}".format(repo))
-        repo_stats = RepoStats()
-        repo_stats.analyze(repo, '.js')
-        print("Done {}".format(repo))
-    return
+#    print('Working on javaScriptRepos')
+#    reposFile = open('javaScriptRepos.txt', 'r')
+#    repoURLs = []
+#    for line in reposFile:
+#        repoURLs.append(line)
+#    reposFile.close()
+#
+#    for repo in repoURLs:
+#        print("Starting {}".format(repo))
+#        repo_stats = RepoStats()
+#        repo_stats.analyze(repo, '.js')
+#        print("Done {}".format(repo))
+#    return
 
 main()
