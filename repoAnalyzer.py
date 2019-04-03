@@ -51,7 +51,7 @@ class RepoStats:
         file = open('./results/'+extractRepoName(repo_path)+'.json', 'w')
         file.close()
 
-        if 'basket.js':
+        if repo_name == 'basket.js':
             branch = "gh-pages"
         if repo_name == "meteor":
             branch = "devel"
