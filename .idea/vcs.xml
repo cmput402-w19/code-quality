@@ -9,34 +9,59 @@
     <mapping directory="$PROJECT_DIR$/repos/HanLP" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/JCSprout" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/MPAndroidChart" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/NewsBlur" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/Pillow" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/RxJava" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/Signal-Android" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/Telegram" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/TextBlob" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/androidannotations" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/apollo" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/arthas" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/boto" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/bottle" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/butterknife" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/click" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/deeplearning4j" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/druid" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/elasticsearch" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/falcon" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/flasky" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/fresco" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/fuzzywuzzy" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/gitsome" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/glide" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/greenDAO" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/guava" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/incubator-dubbo" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/java-design-patterns" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/jenkins" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/jinja" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/leakcanary" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/logger" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/lottie-android" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/matplotlib" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/musicbox" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/okhttp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/paramiko" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/peewee" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/pyinstaller" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/pyro" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/python-for-android" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/python-prompt-toolkit" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/python-spider" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/ray" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/realm-java" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/reinforcement-learning-an-introduction" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/retrofit" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/schedule" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/spring-boot" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/spring-boot-examples" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/spring-framework" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/stetho" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/tushare" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/tutorials" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/word_cloud" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/zipkin" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/zxing" vcs="Git" />
   </component>
