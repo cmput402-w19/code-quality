@@ -56,7 +56,6 @@ https://github.com/dianping/cat.git
 https://github.com/dbeaver/dbeaver.git
 https://github.com/roughike/BottomBar.git
 https://github.com/tbruyelle/RxPermissions.git
-https://github.com/lingochamp/FileDownloader.git
 https://github.com/perwendel/spark.git
 https://github.com/apache/flink.git
 https://github.com/apache/incubator-druid.git
@@ -65,15 +64,12 @@ https://github.com/rzwitserloot/lombok.git
 https://github.com/Tencent/QMUI_Android.git
 https://github.com/dyc87112/SpringBoot-Learning.git
 https://github.com/Netflix/eureka.git
-https://github.com/roughike/BottomBar.git
 https://github.com/lingochamp/FileDownloader.git
-https://github.com/perwendel/spark.git
 https://github.com/alibaba/canal.git
 https://github.com/google/guice.git
 https://github.com/xetorthio/jedis.git
 https://github.com/iBotPeaches/Apktool.git
 https://github.com/code4craft/webmagic.git
-https://github.com/nhaarman/ListViewAnimations.git
 https://github.com/apereo/cas.git
 https://github.com/swagger-api/swagger-core.git
 https://github.com/apache/storm.git
@@ -98,4 +94,7 @@ https://github.com/nhaarman/ListViewAnimations.git
 https://github.com/koush/AndroidAsync.git
 https://github.com/koush/ion.git
 https://github.com/mockito/mockito.git
-
+https://github.com/netty/netty.git
+https://github.com/skylot/jadx.git
+https://github.com/alibaba/fastjson.git
+https://github.com/Netflix/Hystrix.git

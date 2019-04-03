@@ -32,9 +32,9 @@ class RepoStats:
         self.repo_type = repo_type
         if repo_name == "ansible" or repo_name == 'dbeaver':
             branch = 'devel'
-        elif repo_name == 'home-assistant' or repo_name == 'HikariCP':
+        elif repo_name == 'home-assistant' or repo_name == 'HikariCP' or repo_name == 'TextBlob':
             branch = 'dev'
-        elif repo_name == 'glances' or repo_name == 'androidannotations' or repo_name == 'zaproxy' or repo_name == 'fescar':
+        elif repo_name == 'glances' or repo_name == 'androidannotations' or repo_name == 'zaproxy' or repo_name == 'fescar' or repo_name == 'boto':
             branch = 'develop'
         elif repo_name.lower() == 'rxjava' or repo_name == 'dex2jar':
             branch = '2.x'
@@ -46,10 +46,9 @@ class RepoStats:
             branch = 'release/2.x'
         else:
             branch = 'master'
-
-        self.repo = RepositoryMining('./repos/{}'.format(repo_name), only_in_branch=branch, only_modifications_with_file_types=[repo_type])
-        file = open('./results/'+extractRepoName(repo_path)+'.json', 'w')
-        file.close()
+        if repo_name == 'netty':
+            branch = '4.1'
+     
 
         if repo_name == 'basket.js':
             branch = "gh-pages"
@@ -152,19 +151,19 @@ def extractRepoName(url):
 
 
 def main():
-    print('Working on Java')
-    reposFile = open('javaRepos.txt', 'r')
-    repoURLs = []
-    for line in reposFile:
-        repoURLs.append(line)
-    reposFile.close()
+    # print('Working on Java')
+    # reposFile = open('javaRepos.txt', 'r')
+    # repoURLs = []
+    # for line in reposFile:
+    #     repoURLs.append(line)
+    # reposFile.close()
 
-    for repo in repoURLs:
-        print("Starting {}".format(repo))
-        repo_stats = RepoStats()
-        repo_stats.analyze(repo, '.java')
-        print("Done {}".format(repo))
-    return 
+    # for repo in repoURLs:
+    #     print("Starting {}".format(repo))
+    #     repo_stats = RepoStats()
+    #     repo_stats.analyze(repo, '.java')
+    #     print("Done {}".format(repo))
+    # return 
 
     print("Working on python")
     reposFile = open('pythonrepolist.txt', 'r')

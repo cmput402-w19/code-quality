@@ -1,13 +1,13 @@
 https://github.com/vuejs/vue.git
 https://github.com/jquery/jquery.git
-#https://github.com/mrdoob/three.js.git
+https://github.com/mrdoob/three.js.git
 https://github.com/reduxjs/redux.git
 https://github.com/angular/angular.git
-#https://github.com/meteor/meteor.git
-#https://github.com/moment/moment.git
+https://github.com/meteor/meteor.git
+https://github.com/moment/moment.git
 https://github.com/lodash/lodash.git
-#https://github.com/ElemeFE/element.git
-#https://github.com/storybooks/storybook.git
+https://github.com/ElemeFE/element.git
+https://github.com/storybooks/storybook.git
 https://github.com/yarnpkg/yarn.git
 https://github.com/babel/babel.git
 https://github.com/parcel-bundler/parcel.git
@@ -33,7 +33,7 @@ https://github.com/facebook/flow.git
 https://github.com/webtorrent/webtorrent.git
 https://github.com/kriasoft/react-starter-kit.git
 https://github.com/mobxjs/mobx.git
-https://github.com/bevacqua/dragulav.git
+https://github.com/bevacqua/dragula.git
 https://github.com/Marak/faker.js.git
 https://github.com/sequelize/sequelize.git
 https://github.com/mochajs/mocha.git
@@ -58,7 +58,7 @@ https://github.com/systemjs/systemjs.git
 https://github.com/qunitjs/qunit.git
 https://github.com/azer/prova.git
 https://github.com/dalekjs/dalek.git
-https://github`.com/sinonjs/sinon.git
+https://github.com/sinonjs/sinon.git
 https://github.com/aurelia/framework.git
 https://github.com/jashkenas/backbone.git
 https://github.com/spine/spine.git
@@ -72,8 +72,8 @@ https://github.com/ripplejs/ripple.git
 https://github.com/janl/mustache.js.git
 https://github.com/twitter/hogan.js.git
 https://github.com/olado/doT.git
-https://github.com/linkedin/dustjs/.git
-https://githubS.com/chartjs/Chart.js.git
+https://github.com/linkedin/dustjs.git
+https://github.com/chartjs/Chart.js.git
 https://github.com/paperjs/paper.js.git
 https://github.com/fabricjs/fabric.js.git
 https://github.com/almende/vis.git
@@ -98,3 +98,4 @@ https://github.com/highlightjs/highlight.js.git
 https://github.com/PrismJS/prism.git
 https://github.com/guillaumepotier/Parsley.js.git
 https://github.com/arasatasaygin/is.js.git
+
