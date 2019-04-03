@@ -86,7 +86,6 @@ https://github.com/marcuswestin/store.js.git
 https://github.com/js-cookie/js-cookie.git
 https://github.com/addyosmani/basket.js.git
 https://github.com/bevacqua/contra.git
-https://github.com/caolan/async.git
 https://github.com/visionmedia/page.js.git
 https://github.com/flatiron/director.git
 https://github.com/olivernn/davis.js.git
@@ -98,4 +97,5 @@ https://github.com/highlightjs/highlight.js.git
 https://github.com/PrismJS/prism.git
 https://github.com/guillaumepotier/Parsley.js.git
 https://github.com/arasatasaygin/is.js.git
+https://github.com/impress/impress.js.git
 

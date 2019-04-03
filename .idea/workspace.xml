@@ -1,34 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="adf2d4b0-8d41-4196-8d84-770e14d9c52a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-1/16.txt" beforeDir="false" afterPath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-1/16.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-1/17.txt" beforeDir="false" afterPath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-1/17.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-1/18.txt" beforeDir="false" afterPath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-1/18.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-1/19.txt" beforeDir="false" afterPath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-1/19.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-1/20.txt" beforeDir="false" afterPath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-1/20.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-2/10.txt" beforeDir="false" afterPath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-2/10.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-2/11.txt" beforeDir="false" afterPath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-2/11.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-2/16.txt" beforeDir="false" afterPath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-2/16.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-2/17.txt" beforeDir="false" afterPath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-2/17.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-2/18.txt" beforeDir="false" afterPath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-2/18.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-2/19.txt" beforeDir="false" afterPath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-2/19.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-2/20.txt" beforeDir="false" afterPath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-2/20.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-2/21.txt" beforeDir="false" afterPath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-2/21.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-2/24.txt" beforeDir="false" afterPath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-2/24.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-2/26.txt" beforeDir="false" afterPath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-2/26.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-2/27.txt" beforeDir="false" afterPath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-2/27.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-2/29.txt" beforeDir="false" afterPath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-2/29.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-2/32.txt" beforeDir="false" afterPath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-2/32.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-3/18.txt" beforeDir="false" afterPath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-3/18.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-3/19.txt" beforeDir="false" afterPath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-3/19.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-3/20.txt" beforeDir="false" afterPath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-3/20.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-3/21.txt" beforeDir="false" afterPath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-3/21.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-3/22.txt" beforeDir="false" afterPath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-3/22.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-3/23.txt" beforeDir="false" afterPath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-3/23.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-3/24.txt" beforeDir="false" afterPath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-3/24.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-3/25.txt" beforeDir="false" afterPath="$PROJECT_DIR$/repos/zxing/core/src/test/resources/blackbox/qrcode-3/25.txt" afterDir="false" />
-    </list>
+    <list default="true" id="adf2d4b0-8d41-4196-8d84-770e14d9c52a" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/repoAnalyzer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
-              <caret line="191" column="4" selection-start-line="191" selection-start-column="4" selection-end-line="191" selection-end-column="4" />
+            <state relative-caret-position="179">
+              <caret line="196" column="41" lean-forward="true" selection-start-line="196" selection-start-column="41" selection-end-line="196" selection-end-column="41" />
               <folding>
                 <element signature="e#0#53#0" expanded="true" />
               </folding>
@@ -78,6 +51,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -89,7 +63,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -123,6 +96,7 @@
       <updated>1554245322556</updated>
       <workItem from="1554245457922" duration="580000" />
       <workItem from="1554247628788" duration="358000" />
+      <workItem from="1554317603920" duration="130000" />
     </task>
     <task id="LOCAL-00001" summary="Fix issue">
       <created>1554245623213</created>
@@ -138,16 +112,30 @@
       <option name="project" value="LOCAL" />
       <updated>1554247968463</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fixes">
+      <created>1554317665134</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1554317665134</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Merge branch 'BorisPython' of github.com:cmput402-w19/code-quality&#10;&#10;# Conflicts:&#10;#&#9;repoAnalyzer.py">
+      <created>1554317733734</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1554317733734</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="938000" />
+    <option name="totallyTimeSpent" value="1068000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25235197" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.255119" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -216,7 +204,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fix issue" />
     <MESSAGE value="Merge branch 'javaScript' of github.com:cmput402-w19/code-quality&#10;&#10;# Conflicts:&#10;#&#9;repoAnalyzer.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'javaScript' of github.com:cmput402-w19/code-quality&#10;&#10;# Conflicts:&#10;#&#9;repoAnalyzer.py" />
+    <MESSAGE value="Fixes" />
+    <MESSAGE value="Merge branch 'BorisPython' of github.com:cmput402-w19/code-quality&#10;&#10;# Conflicts:&#10;#&#9;repoAnalyzer.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'BorisPython' of github.com:cmput402-w19/code-quality&#10;&#10;# Conflicts:&#10;#&#9;repoAnalyzer.py" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/requirements.txt">
@@ -224,8 +214,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/repoAnalyzer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="191" column="4" selection-start-line="191" selection-start-column="4" selection-end-line="191" selection-end-column="4" />
+        <state relative-caret-position="179">
+          <caret line="196" column="41" lean-forward="true" selection-start-line="196" selection-start-column="41" selection-end-line="196" selection-end-column="41" />
           <folding>
             <element signature="e#0#53#0" expanded="true" />
           </folding>
