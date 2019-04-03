@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import os
 
-def makeGraph(f, data, fileType):
+def makeGraph(f, data, fileType, fileName):
     xData = []
     yData = []
     yData2 = []
@@ -30,31 +30,33 @@ def makeGraph(f, data, fileType):
     
     ax.set(xlabel="Commit #", ylabel="Total Lines of Code", title="Total Lines of Code At Each Commit")
     ax.grid()
-    f = f.split(".json")[0]
-    cwd = os.getcwd
-    os.chdir("../TotalLinesVsCommits")
-    plt.savefig('./{}.png'.format(f))
+    fileName = fileName.split(".json")[0]
+
+    try:
+        os.mkdir("./results/TotalLinesVsCommits/" + fileType)
+    except:
+        pass
+    plt.savefig('{}.png'.format("./results/TotalLinesVsCommits/" + fileType + "/" + fileName))
     plt.close()
-    os.chdir("../" + fileType)
+
 
 fileTypes = ["java"]
 
-os.chdir("results")
 try:
-    os.mkdir("TotalLinesVsCommits")
+    os.mkdir("./results/TotalLinesVsCommits")
 except:
     pass
 
 for i in fileTypes:
-    os.chdir(i)
-    allFiles = os.listdir(os.getcwd())
+    allFiles = os.listdir("./results/" + i)
     for f in allFiles:
+        fileName = f
+        f = "./results/" + i + "/" + f
+        print(f)
         fp = open(f, "r")
         data = json.load(fp)
         fp.close()
 
-        makeGraph(f, data, i)
-        
-    os.chdir("..")
+        makeGraph(f, data, i, fileName) 
 
 
