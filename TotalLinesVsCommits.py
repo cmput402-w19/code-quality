@@ -6,6 +6,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 import os
 
+graphName = "TotalLinesVsCommits" # const
+# Used for subfolder name
+
 def makeGraph(f, data, fileType, fileName):
     xData = []
     yData = []
@@ -33,17 +36,17 @@ def makeGraph(f, data, fileType, fileName):
     fileName = fileName.split(".json")[0]
 
     try:
-        os.mkdir("./results/TotalLinesVsCommits/" + fileType)
+        os.mkdir("./results/" + graphName + "/" + fileType)
     except:
         pass
-    plt.savefig('{}.png'.format("./results/TotalLinesVsCommits/" + fileType + "/" + fileName))
+    plt.savefig('{}.png'.format("./results/" + graphName + "/" + fileType + "/" + fileName))
     plt.close()
 
 
 fileTypes = ["java"]
 
 try:
-    os.mkdir("./results/TotalLinesVsCommits")
+    os.mkdir("./results/" + graphName +")
 except:
     pass
 
