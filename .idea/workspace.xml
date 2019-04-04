@@ -1,7 +1,258 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="adf2d4b0-8d41-4196-8d84-770e14d9c52a" name="Default Changelist" comment="" />
+    <list default="true" id="adf2d4b0-8d41-4196-8d84-770e14d9c52a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/TotalNumbers.py" beforeDir="false" afterPath="$PROJECT_DIR$/TotalNumbers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repoAnalyzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/repoAnalyzer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/ARouter.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/Android-CleanArchitecture.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/Android-Debug-Database.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/Android-ObservableScrollView.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/Android-PickerView.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/AndroidAsync.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/Apktool.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/BottomBar.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/DanmakuFlameMaster.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/EventBus.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/ExoPlayer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/FileDownloader.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/FizzBuzzEnterpriseEdition.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/HanLP.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/HikariCP.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/Hystrix.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/JCSprout.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/ListViewAnimations.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/MPAndroidChart.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/MagicIndicator.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/PermissionsDispatcher.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/PocketHub.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/QMUI_Android.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/RxJava.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/RxLifecycle.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/RxPermissions.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/Signal-Android.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/SpringBoot-Learning.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/Telegram.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/VasSonic.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/ViewPagerIndicator.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/android-classyshark.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/androidannotations.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/antlr4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/apollo.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/arthas.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/butterknife.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/caffeine.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/canal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/cas.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/cat.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/che.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/dbeaver.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/deeplearning4j.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/dex2jar.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/disruptor.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/druid.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/elasticsearch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/epoxy.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/eureka.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/fastjson.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/fescar.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/flink.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/fresco.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/glide.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/greenDAO.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/guava.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/guice.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/hadoop.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/incubator-druid.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/incubator-dubbo.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/ion.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/j2objc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/jadx.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/java-design-patterns.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/jedis.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/jenkins.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/leakcanary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/litho.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/logger.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/lombok.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/lottie-android.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/mall.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/mockito.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/mybatis-3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/netty.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/okhttp.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/otto.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/presto.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/react-native-navigation.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/realm-java.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/retrofit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/solo.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/spark.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/spring-boot-admin.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/spring-boot-examples.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/spring-boot.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/spring-framework.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/springboot-learning-example.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/springside4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/stetho.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/storm.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/swagger-core.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/tutorials.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/vert.x.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/vlayout.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/webmagic.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/zaproxy.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/zipkin.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/java/zxing.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/Chart.js.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/Chart.js.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/DOMPurify.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/DOMPurify.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/Ender.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/Ender.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/Modernizr.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/Modernizr.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/Parsley.js.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/Parsley.js.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/Rocket.Chat.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/Rocket.Chat.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/RxJS.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/RxJS.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/Tone.js.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/Tone.js.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/anime.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/anime.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/async.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/async.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/axios.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/axios.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/babel.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/babel.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/backbone.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/backbone.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/backbone.marionette.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/backbone.marionette.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/basket.js.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/basket.js.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/benchmark.js.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/benchmark.js.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/bottleneck.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/bottleneck.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/brackets.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/brackets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/browserify.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/browserify.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/canjs.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/canjs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/chaplin.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/chaplin.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/clipboard.js.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/clipboard.js.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/contra.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/contra.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/curl.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/curl.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/dalek.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/dalek.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/date-fns.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/date-fns.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/date.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/date.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/davis.js.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/davis.js.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/director.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/director.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/doT.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/doT.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/duo.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/duo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/element.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/element.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/ember.js.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/ember.js.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/esl.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/esl.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/fabric.js.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/fabric.js.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/faker.js.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/faker.js.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/flow.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/flow.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/framework.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/framework.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/fullPage.js.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/fullPage.js.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/hammer.js.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/hammer.js.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/headjs.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/headjs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/heatmap.js.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/heatmap.js.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/hexo.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/hexo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/highlight.js.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/highlight.js.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/hogan.js.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/hogan.js.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/hyper.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/hyper.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/is.js.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/is.js.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/jam.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/jam.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/jquery-timeago.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/jquery-timeago.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/jquery.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/jquery.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/js-cookie.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/js-cookie.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/jspm-cli.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/jspm-cli.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/lodash.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/lodash.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/meteor.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/meteor.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/mobx.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/mobx.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/mocha.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/mocha.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/modulejs.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/modulejs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/moment.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/moment.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/mustache.js.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/mustache.js.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/page.js.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/page.js.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/paper.js.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/paper.js.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/parcel.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/parcel.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/pdf.js.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/pdf.js.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/pixi.js.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/pixi.js.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/preact.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/preact.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/prism.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/prism.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/prova.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/prova.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/qunit.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/qunit.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/react-starter-kit.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/react-starter-kit.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/redux.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/redux.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/requirejs.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/requirejs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/riot.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/riot.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/ripple.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/ripple.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/script.js.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/script.js.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/scrollreveal.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/scrollreveal.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/seajs.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/seajs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/select2.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/select2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/sequelize.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/sequelize.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/sigma.js.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/sigma.js.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/sinon.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/sinon.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/spine.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/spine.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/spm.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/spm.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/store.js.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/store.js.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/storybook.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/storybook.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/systemjs.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/systemjs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/thorax.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/thorax.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/three.js.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/three.js.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/two.js.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/two.js.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/underscore.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/underscore.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/video.js.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/video.js.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/vis.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/vis.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/volo.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/volo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/vue.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/vue.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/webtorrent.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/webtorrent.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/js/yarn.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/js/yarn.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/ChatterBot.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/InstaPy.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/MLAlgorithms.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/NewsBlur.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/Pillow.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/TextBlob.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/Theano.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/Zappa.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/aiohttp.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/beets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/black.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/boto.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/bottle.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/click.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/dash.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/faker.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/falcon.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/flasky.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/fuzzywuzzy.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/gensim.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/gitsome.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/http-prompt.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/httpbin.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/jinja.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/matplotlib.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/mkdocs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/musicbox.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/mycli.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/newspaper.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/nltk.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/paramiko.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/peewee.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/pelican.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/pgcli.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/prophet.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/pyinstaller.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/pyro.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/python-for-android.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/python-prompt-toolkit.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/python-spider.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/python-telegram-bot.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/ray.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/redis-py.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/reinforcement-learning-an-introduction.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/schedule.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/tushare.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/tweepy.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/wifiphisher.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/word_cloud.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/python/zipline.json" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +269,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/repoAnalyzer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="196" column="41" lean-forward="true" selection-start-line="196" selection-start-column="41" selection-end-line="196" selection-end-column="41" />
+            <state relative-caret-position="181">
+              <caret line="228" column="41" selection-start-line="228" selection-start-column="41" selection-end-line="228" selection-end-column="41" />
               <folding>
                 <element signature="e#0#53#0" expanded="true" />
               </folding>
@@ -51,7 +302,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -63,6 +313,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -97,6 +348,8 @@
       <workItem from="1554245457922" duration="580000" />
       <workItem from="1554247628788" duration="358000" />
       <workItem from="1554317603920" duration="130000" />
+      <workItem from="1554333428741" duration="588000" />
+      <workItem from="1554347491013" duration="15000" />
     </task>
     <task id="LOCAL-00001" summary="Fix issue">
       <created>1554245623213</created>
@@ -130,12 +383,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1068000" />
+    <option name="totallyTimeSpent" value="1671000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.255119" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26065302" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -214,8 +467,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/repoAnalyzer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="196" column="41" lean-forward="true" selection-start-line="196" selection-start-column="41" selection-end-line="196" selection-end-column="41" />
+        <state relative-caret-position="181">
+          <caret line="228" column="41" selection-start-line="228" selection-start-column="41" selection-end-line="228" selection-end-column="41" />
           <folding>
             <element signature="e#0#53#0" expanded="true" />
           </folding>

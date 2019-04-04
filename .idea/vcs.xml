@@ -3,65 +3,167 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/Android-CleanArchitecture" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/Chart.js" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/DOMPurify" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/Ender" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/EventBus" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/ExoPlayer" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/FizzBuzzEnterpriseEdition" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/HanLP" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/JCSprout" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/MPAndroidChart" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/Modernizr" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/NewsBlur" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/Parsley.js" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/Pillow" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/Rocket.Chat" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/RxJS" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/RxJava" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/Signal-Android" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/Telegram" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/TextBlob" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/Tone.js" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/androidannotations" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/angular" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/anime" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/apollo" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/arthas" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/async" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/axios" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/babel" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/backbone" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/backbone.marionette" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/basket.js" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/benchmark.js" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/boto" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/bottle" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/bottleneck" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/bower" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/brackets" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/browserify" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/butterknife" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/canjs" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/canjs/test/builders/browserify/node_modules/can" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/chaplin" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/click" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/clipboard.js" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/contra" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/curl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/dalek" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/date" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/date-fns" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/davis.js" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/deeplearning4j" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/director" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/doT" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/dragula" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/druid" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/duo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/dustjs" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/elasticsearch" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/element" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/ember.js" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/esl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/fabric.js" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/faker.js" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/falcon" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/flasky" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/flow" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/framework" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/fresco" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/fullPage.js" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/fuzzywuzzy" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/gitsome" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/glide" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/greenDAO" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/guava" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/hammer.js" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/headjs" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/heatmap.js" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/hexo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/highlight.js" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/hogan.js" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/hyper" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/impress.js" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/incubator-dubbo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/is.js" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/jam" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/java-design-patterns" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/jenkins" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/jinja" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/jquery" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/jquery-timeago" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/js-cookie" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/jspm-cli" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/jspm-cli/sandbox/node_modules/jspm" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/leakcanary" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/lodash" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/logger" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/lottie-android" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/matplotlib" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/meteor" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/mobx" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/mocha" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/modulejs" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/moment" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/musicbox" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/mustache.js" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/okhttp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/page.js" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/paper.js" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/paramiko" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/parcel" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/pdf.js" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/peewee" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/pixi.js" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/preact" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/prism" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/prova" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/pyinstaller" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/pyro" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/python-for-android" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/python-prompt-toolkit" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/python-spider" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/qunit" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/ray" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/react-starter-kit" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/realm-java" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/redux" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/reinforcement-learning-an-introduction" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/requirejs" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/retrofit" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/riot" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/ripple" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/schedule" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/script.js" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/scrollreveal" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/seajs" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/select2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/sequelize" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/sigma.js" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/sinon" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/spine" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/spm" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/spring-boot" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/spring-boot-examples" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/spring-framework" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/stetho" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/store.js" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/storybook" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/systemjs" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/thorax" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/three.js" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/tushare" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/tutorials" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/two.js" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/underscore" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/video.js" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/vis" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/volo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/vue" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/webtorrent" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/word_cloud" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/yarn" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/zipkin" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/zxing" vcs="Git" />
   </component>

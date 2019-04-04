@@ -174,24 +174,35 @@ class RepoStats:
                     self.count_modification_stats(modification, commit)
                     test_lines_in_commit += modification.added - modification.removed
                     delta_test_files_in_commit -= 1
+                    total_lines_in_commit += modification.added - modification.removed
+                    self.total_lines_net += modification.added - modification.removed
 
             elif modification.old_path is None and (self.check_test_path(modification.new_path) and self.check_test_filename(modification.filename)): # Added test file
                     self.count_modification_stats(modification, commit)
                     test_lines_in_commit += modification.added - modification.removed
                     delta_test_files_in_commit += 1
+                    total_lines_in_commit += modification.added - modification.removed
+                    self.total_lines_net += modification.added - modification.removed
             elif (modification.new_path is not None and self.check_test_path(modification.new_path) and self.check_test_filename(modification.filename)):
                 self.count_modification_stats(modification, commit)
                 test_lines_in_commit += modification.added - modification.removed
+                total_lines_in_commit += modification.added - modification.removed
+                self.total_lines_net += modification.added - modification.removed
             elif modification.old_path is not None and self.check_test_path(modification.old_path) and self.check_test_filename(modification.filename):
                 self.count_modification_stats(modification, commit)
                 test_lines_in_commit += modification.added - modification.removed
+                total_lines_in_commit += modification.added - modification.removed
+                self.total_lines_net += modification.added - modification.removed
+            if modification.old_path is not None and repo_type in modification.old_path:
+                total_lines_in_commit += modification.added - modification.removed
+                self.total_lines_net += modification.added - modification.removed
+            elif modification.new_path is not None and repo_type in modification.new_path
             if modification.old_path is None: # File added
                 delta_files_in_commit += 1
             if modification.new_path is None: # File deleted
                 delta_files_in_commit -= 1
 
-            total_lines_in_commit += modification.added - modification.removed
-            self.total_lines_net += modification.added - modification.removed
+            
 
         self.test_files += delta_test_files_in_commit
         self.total_files += delta_files_in_commit
@@ -211,18 +222,17 @@ def extractRepoName(url):
 def main():
 
     print('Working on Java')
-#    reposFile = open('javaRepos.txt', 'r')
-#    repoURLs = []
-#    for line in reposFile:
-#        repoURLs.append(line)
-#    reposFile.close()
+    reposFile = open('javaRepos.txt', 'r')
+    repoURLs = []
+    for line in reposFile:
+        repoURLs.append(line)
+    reposFile.close()
+    for repo in repoURLs:
+        print("Starting {}".format(repo))
+        repo_stats = RepoStats()
+        repo_stats.analyze(repo, '.java')
+        print("Done {}".format(repo))
 
-#    for repo in repoURLs:
-#        print("Starting {}".format(repo))
-#        repo_stats = RepoStats()
-#        repo_stats.analyze(repo, '.java')
-#        print("Done {}".format(repo))
-    #return
 
 
     print("Working on python")
