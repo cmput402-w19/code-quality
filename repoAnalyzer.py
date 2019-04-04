@@ -225,18 +225,18 @@ def main():
     #return
 
 
-#    print("Working on python")
-#    reposFile = open('pythonrepolist.txt', 'r')
-#    repoURLs = []
-#    for line in reposFile:
-#        repoURLs.append(line)
-#    reposFile.close()
+    print("Working on python")
+    reposFile = open('pythonrepolist.txt', 'r')
+    repoURLs = []
+    for line in reposFile:
+        repoURLs.append(line)
+    reposFile.close()
 
-#    for repo in repoURLs:
-#        print("Starting {}".format(repo))
-#        repo_stats = RepoStats()
-#        repo_stats.analyze(repo, '.py')
-#        print("Done {}".format(repo))
+    for repo in repoURLs:
+        print("Starting {}".format(repo))
+        repo_stats = RepoStats()
+        repo_stats.analyze(repo, '.py')
+        print("Done {}".format(repo))
 
     print('Working on javaScriptRepos')
     reposFile = open('javaScriptRepos.txt', 'r')
