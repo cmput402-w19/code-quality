@@ -179,7 +179,10 @@ class RepoStats:
                     self.count_modification_stats(modification, commit)
                     test_lines_in_commit += modification.added - modification.removed
                     delta_test_files_in_commit += 1
-            elif (self.check_test_path(modification.new_path) and self.check_test_filename(modification.filename)):
+            elif (modification.new_path is not None and self.check_test_path(modification.new_path) and self.check_test_filename(modification.filename)):
+                self.count_modification_stats(modification, commit)
+                test_lines_in_commit += modification.added - modification.removed
+            elif modification.old_path is not None and self.check_test_path(modification.old_path) and self.check_test_filename(modification.filename):
                 self.count_modification_stats(modification, commit)
                 test_lines_in_commit += modification.added - modification.removed
             if modification.old_path is None: # File added
@@ -221,21 +224,6 @@ def main():
 #        print("Done {}".format(repo))
     #return
 
-
-#    print('Working on Java')
-#    reposFile = open('javaRepos.txt', 'r')
-#    repoURLs = []
-#    for line in reposFile:
-#        repoURLs.append(line)
-#    reposFile.close()
-#
-#    for repo in repoURLs:
-#        print("Starting {}".format(repo))
-#        repo_stats = RepoStats()
-#        repo_stats.analyze(repo, '.java')
-#        print("Done {}".format(repo))
-#    return
-#
 
 #    print("Working on python")
 #    reposFile = open('pythonrepolist.txt', 'r')
