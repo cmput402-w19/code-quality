@@ -193,10 +193,10 @@ class RepoStats:
                 test_lines_in_commit += modification.added - modification.removed
                 total_lines_in_commit += modification.added - modification.removed
                 self.total_lines_net += modification.added - modification.removed
-            if modification.old_path is not None and repo_type in modification.old_path:
+            if modification.old_path is not None and self.repo_type in modification.old_path:
                 total_lines_in_commit += modification.added - modification.removed
                 self.total_lines_net += modification.added - modification.removed
-            elif modification.new_path is not None and repo_type in modification.new_path:
+            elif modification.new_path is not None and self.repo_type in modification.new_path:
                 total_lines_in_commit += modification.added - modification.removed
                 self.total_lines_net += modification.added - modification.removed
             if modification.old_path is None: # File added
