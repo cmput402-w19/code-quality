@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import os
 
+fileTypes = ["java"] # List of all language types to check
 graphName = "TotalLinesVsCommits" # const
 # Used for subfolder name
 
@@ -43,10 +44,10 @@ def makeGraph(f, data, fileType, fileName):
     plt.close()
 
 
-fileTypes = ["java"]
+
 
 try:
-    os.mkdir("./results/" + graphName +)
+    os.mkdir("./results/" + graphName)
 except:
     pass
 
