@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import os
 
-fileTypes = ["java"] # List of all language types to check
+fileTypes = ["java", "python", "javascript"] # List of all language types to check
 graphName = "FilesVsCommits" # const
 # Used for subfolder name
 
@@ -31,11 +31,11 @@ def makeGraph(f, data, fileType, fileName):
     ax.plot(x, y, label="Test Files")
     ax.plot(x, y2, label="All Files")
     ax.legend()
-    
-    ax.set(xlabel="Commit #", ylabel="Total Files", title="Total Files At Each Commit")
+    fileName = fileName.split(".json")[0]   
+    ax.set(xlabel="Commit #", ylabel="Total Files", title="Total Files At Each Commit (" + fileName + ")")
     ax.grid()
 
-    fileName = fileName.split(".json")[0]
+
 
     try:
         os.mkdir("./results/" + graphName + "/" + fileType)
