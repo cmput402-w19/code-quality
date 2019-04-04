@@ -79,8 +79,6 @@ class RepoStats:
             branch="next"
         elif repo_name == "element":
             branch="dev"
-        else:
-            branch = 'master'
         if repo_name == 'basket.js':
             branch = "gh-pages"
         if repo_name == "meteor":
@@ -205,45 +203,45 @@ def extractRepoName(url):
 
 
 def main():
-#    print('Working on Java')
-#    reposFile = open('javaRepos.txt', 'r')
-#    repoURLs = []
-#    for line in reposFile:
-#        repoURLs.append(line)
-#    reposFile.close()
-#
-#    for repo in repoURLs:
-#        print("Starting {}".format(repo))
-#        repo_stats = RepoStats()
-#        repo_stats.analyze(repo, '.java')
-#        print("Done {}".format(repo))
-#    return
-#
-    # print("Working on python")
-    # reposFile = open('pythonrepolist.txt', 'r')
-    # repoURLs = []
-    # for line in reposFile:
-    #     repoURLs.append(line)
-    # reposFile.close()
+    print('Working on Java')
+    reposFile = open('javaRepos.txt', 'r')
+    repoURLs = []
+    for line in reposFile:
+        repoURLs.append(line)
+    reposFile.close()
 
-    # for repo in repoURLs:
-    #     print("Starting {}".format(repo))
-    #     repo_stats = RepoStats()
-    #     repo_stats.analyze(repo, '.py')
-    #     print("Done {}".format(repo))
+    for repo in repoURLs:
+        print("Starting {}".format(repo))
+        repo_stats = RepoStats()
+        repo_stats.analyze(repo, '.java')
+        print("Done {}".format(repo))
+    #return
 
-   print('Working on javaScriptRepos')
-   reposFile = open('javaScriptRepos.txt', 'r')
-   repoURLs = []
-   for line in reposFile:
-       repoURLs.append(line)
-   reposFile.close()
+    print("Working on python")
+    reposFile = open('pythonrepolist.txt', 'r')
+    repoURLs = []
+    for line in reposFile:
+        repoURLs.append(line)
+    reposFile.close()
 
-   for repo in repoURLs:
-       print("Starting {}".format(repo))
-       repo_stats = RepoStats()
-       repo_stats.analyze(repo, '.js')
-       print("Done {}".format(repo))
-   return
+    for repo in repoURLs:
+        print("Starting {}".format(repo))
+        repo_stats = RepoStats()
+        repo_stats.analyze(repo, '.py')
+        print("Done {}".format(repo))
+
+    print('Working on javaScriptRepos')
+    reposFile = open('javaScriptRepos.txt', 'r')
+    repoURLs = []
+    for line in reposFile:
+        repoURLs.append(line)
+    reposFile.close()
+ 
+    for repo in repoURLs:
+        print("Starting {}".format(repo))
+        repo_stats = RepoStats()
+        repo_stats.analyze(repo, '.js')
+        print("Done {}".format(repo))
+    return
 
 main()
