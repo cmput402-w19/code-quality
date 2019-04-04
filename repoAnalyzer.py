@@ -127,7 +127,7 @@ class RepoStats:
         for commit in self.repo.traverse_commits():
             self.analyze_commit(commit)
             self.total_commits += 1
-            if self.total_commits % 1000 == 0:
+            if self.total_commits % 100 == 0:
                 print("Working on commit {}".format(self.total_commits))
         self.actual_repo = GitRepository('./repos/{}'.format(repo_name))
         self.actual_commits = len(list(self.actual_repo.get_list_commits(branch=branch)))
