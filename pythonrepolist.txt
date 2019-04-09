@@ -1,3 +1,4 @@
+https://github.com/saltstack/salt.git
 https://github.com/pallets/flask.git
 https://github.com/nvbn/thefuck.git
 https://github.com/jakubroztocil/httpie.git
@@ -37,7 +38,6 @@ https://github.com/spotify/luigi.git
 https://github.com/fabric/fabric.git
 https://github.com/geekcomputers/Python.git
 https://github.com/powerline/powerline.git
-https://github.com/saltstack/salt.git
 https://github.com/locustio/locust.git
 https://github.com/tqdm/tqdm.git
 https://github.com/zulip/zulip.git
@@ -98,3 +98,4 @@ https://github.com/python-pillow/Pillow.git
 https://github.com/pallets/jinja.git
 https://github.com/dbader/schedule.git
 https://github.com/tweepy/tweepy.git
+

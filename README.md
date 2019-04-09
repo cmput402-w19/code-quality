@@ -11,4 +11,4 @@ Steps to reproduce our results:
 2. Clone this repo
 3. Run `./getJavaRepos`, `./getJavaScriptRepos` and `./getPythonRepos`. This will clone all the repos into ./repos so that they can be analyzed in the next step.
 4. Run `python repoAnalyzer.py`. This will now run through all 300 repos and extract all the data we used for our analysis into the ./results folder. This should take a few days to a week, depending on the strength of your machine.
-5. Once you have generated the data, you can run `Proportion.py`, ``
+5. Once you have generated the data, you can run `Proportion.py` and `TotalLinesVsCommits.py` to generate a folder in /results with the same name as the script which will store all the graphs for each repository.

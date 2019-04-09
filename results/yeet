@@ -1,9 +1,0 @@
-{
- "actual_commits": "DescribeResult(nobs=50, minmax=(62, 29163), mean=3670.9, variance=35686588.01020408, skewness=3.1314541290292572, kurtosis=10.024524903243764)",
- "commits_with_tests": "DescribeResult(nobs=50, minmax=(1, 446), mean=77.9, variance=11688.94897959184, skewness=1.9038344444417283, kurtosis=2.9663589853506576)",
- "source_commits": "DescribeResult(nobs=50, minmax=(57, 24470), mean=2711.98, variance=23356350.6322449, skewness=3.6327568816853253, kurtosis=13.365526300383678)",
- "total_lines": "DescribeResult(nobs=50, minmax=(-1082468, 2253044), mean=139650.26, variance=220461288956.60452, skewness=1.8376136310079023, kurtosis=8.431143825587933)",
- "test_lines": "DescribeResult(nobs=50, minmax=(-23343, 91637), mean=7714.42, variance=250858511.9628572, skewness=3.118195429053419, kurtosis=14.061108152409947)",
- "number_of_test_files": "DescribeResult(nobs=50, minmax=(-20, 811), mean=87.42, variance=23146.942448979597, skewness=2.8783109914586604, kurtosis=9.425937132570972)",
- "number_of_total_files": "DescribeResult(nobs=50, minmax=(-2381, 15650), mean=663.5, variance=5241349.071428572, skewness=5.735441112704898, kurtosis=35.335924873223135)"
-}
