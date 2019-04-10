@@ -163,6 +163,14 @@ class RepoStats:
         # get test lines
         self.test_lines_net += modification.added - modification.removed
 
+    # Function checks if a commit msg contains anything like "fix", "closes" or anything else that might indicate a bug fix that should have tests with it and returns True/False
+    def check_if_commit_was_fix(self, commit):
+        possibleMessages = ["fix", "closes", "fixes", "resolves"]
+        for i in possibleMessages:
+            if i in commit.msg:
+                return True
+        return False
+
     def analyze_commit(self, commit):
         test_lines_in_commit = 0
         total_lines_in_commit = 0
