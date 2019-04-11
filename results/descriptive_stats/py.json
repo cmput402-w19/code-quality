@@ -1,3 +1,3 @@
 {
- "number_of_total_files": "DescribeResult(nobs=7, minmax=(34, 81125), mean=14299.0, variance=887331448.0, skewness=1.9554589781261404, kurtosis=1.9621257356143023)"
+ "number_of_total_files": "DescribeResult(nobs=7, minmax=(34, 45980), mean=9278.285714285714, variance=280917861.5714286, skewness=1.7878312107368948, kurtosis=1.527417650255634)"
 }

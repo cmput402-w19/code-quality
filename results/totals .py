@@ -1,7 +1,7 @@
 {
- "total_lines": 151409269,
- "total_commits": 1171121,
- "source_commits": 823113,
- "commits_with_tests": 199543,
- "test_lines": 19611126
+ "total_lines": 116544863,
+ "total_commits": 1171140,
+ "source_commits": 823129,
+ "commits_with_tests": 306975,
+ "test_lines": 22554853
 }
