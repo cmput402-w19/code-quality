@@ -171,6 +171,15 @@ class RepoStats:
                 return True
         return False
 
+    # Function checks if a commit has changed any test files
+    def check_if_commit_has_test(self, commit):
+        for modification in commit.modifications:
+            if check_test_filename(modification):
+                return True
+            if check_test_path(modification):
+                return True
+        return False
+
     def analyze_commit(self, commit):
         test_lines_in_commit = 0
         total_lines_in_commit = 0
