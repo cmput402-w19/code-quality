@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import os
 
-fileTypes = [".java", ".py", ".js"] # List of all language types to check
+fileTypes = ["java", "py", "js"] # List of all language types to check
 graphName = "TotalLinesVsCommits" # const
 # Used for subfolder name
 
