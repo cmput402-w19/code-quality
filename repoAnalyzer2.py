@@ -169,7 +169,7 @@ class RepoStats:
     def check_test_filename(self, file_name: str):
         return self.repo_type in file_name and ('test_' in file_name.lower() or 'test' in file_name.lower())
 
-    def count_modification_stats(self, path, diff, new_lines,commit):
+    def count_modification_stats(self, path, diff, new_lines, commit):
         if self.commits.get(commit.hash) is None:
             self.commits[commit.hash] = True
             self.commits_with_tests += 1  # If a test file gets deleted, does this count as a commit with a test?
