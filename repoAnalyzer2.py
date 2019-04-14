@@ -148,13 +148,15 @@ class RepoStats:
             "source_commits": self.total_commits,
             "total_lines": self.total_lines_net,
             "test_lines": self.test_lines_net,
-            "number_of_test_files": len(list(filter(filter_list, list(self.all_files.values())))),
+            "number_of_test_files": len(list(filter(filter_list, list(self.test_files_dict.values())))),
             "number_of_total_files": len(list(filter(filter_list, list(self.all_files.values())))),
             "number_of_test_files_per_commit": self.test_files_per_commit,
             "number_of_files_per_commit": self.files_per_commit,
             'test_lines_per_commit': self.test_lines_per_commit,
             'total_lines_per_commit': self.total_lines_per_commit,
-            'head_commit': self.actual_repo.get_head().hash
+            'head_commit': self.actual_repo.get_head().hash,
+            "test_files": self.test_files_dict,
+            'all_files': self.all_files
         }
 
         file = open('./results/{}/'.format(repo_type) + extractRepoName(repo_path) + '.json', 'w')
@@ -162,7 +164,7 @@ class RepoStats:
         file.close()
 
     def check_test_path(self, path: str):
-        return self.repo_type in path and ('test' in path or "Test" in path)
+        return self.repo_type in path and 'test' in path.lower()
 
     def check_test_filename(self, file_name: str):
         return self.repo_type in file_name and ('test_' in file_name.lower() or 'test' in file_name.lower())
@@ -185,20 +187,22 @@ class RepoStats:
         if self.check_if_commit_was_fix(commit):
             commit_fix = True
         for modification in commit.modifications:
-            if not (self.repo_type in modification.filename and 'json' not in modification.filename):
+            if not (self.repo_type in modification.filename):
+                continue
+            elif 'json' in modification.filename:
                 continue
             else:
-                if modification.change_type == ModificationType.DELETE:
+                if modification.change_type == 4:
                     delta_files_in_commit -= 1
                     if self.check_test_filename(modification.filename) or self.check_test_path(modification.old_path):
                         delta_test_files_in_commit -= 1
-                elif modification.change_type == ModificationType.ADD:
+                elif modification.change_type == 1:
                     delta_files_in_commit += 1
                     if self.check_test_filename(modification.filename) or self.check_test_path(modification.new_path):
                         delta_test_files_in_commit += 1
                 new_lines = modification.nloc if modification.nloc is not None else 0
                 # Renaming of file... Arg
-                if modification.change_type == ModificationType.RENAME:
+                if modification.change_type == 3:
                     self.all_files[modification.old_path] = 0
                     self.all_files[modification.new_path] = 0
                     path = modification.new_path
@@ -217,7 +221,7 @@ class RepoStats:
                     print('what?')
                     exit(-1)
 
-                if self.all_files.get(path) is None:
+                if self.all_files.get(path, None) is None:
                     diff = new_lines
                     self.all_files[path] = diff
 
@@ -261,7 +265,7 @@ class RepoStats:
     def check_if_commit_was_fix(self, commit):
         possibleMessages = ["fix", "closes", "fixes", "resolves"]
         for i in possibleMessages:
-            if i in commit.msg:
+            if i in commit.msg.lower():
                 return True
         return False
 
@@ -278,31 +282,6 @@ def main():
     #repo = 'https://github.com/coleifer/peewee.git'
     #repo_stats = RepoStats()
     #repo_stats.analyze(repo, 'python_test')
-    print('Working on Java')
-    reposFile = open('javaRepos.txt', 'r')
-    repoURLs = []
-    for line in reposFile:
-        repoURLs.append(line)
-    reposFile.close()
-    for repo in repoURLs:
-        print("Starting {}".format(repo))
-        repo_stats = RepoStats()
-        repo_stats.analyze(repo, 'java')
-        print("Done {}".format(repo))
-
-    print("Working on python")
-    reposFile = open('pythonrepolist.txt', 'r')
-    repoURLs = []
-    for line in reposFile:
-        repoURLs.append(line)
-    reposFile.close()
-    
-    for repo in repoURLs:
-        print("Starting {}".format(repo))
-        repo_stats = RepoStats()
-        repo_stats.analyze(repo, 'py')
-        print("Done {}".format(repo))
-
     print('Working on javaScriptRepos')
     reposFile = open('javaScriptRepos.txt', 'r')
     repoURLs = []
@@ -315,7 +294,33 @@ def main():
         repo_stats = RepoStats()
         repo_stats.analyze(repo, 'js')
         print("Done {}".format(repo))
-    return
+
+    print("Working on python")
+    reposFile = open('pythonrepolist.txt', 'r')
+    repoURLs = []
+    for line in reposFile:
+        repoURLs.append(line)
+    reposFile.close()
+
+    for repo in repoURLs:
+        print("Starting {}".format(repo))
+        repo_stats = RepoStats()
+        repo_stats.analyze(repo, 'py')
+        print("Done {}".format(repo))
+
+    print('Working on Java')
+    reposFile = open('javaRepos.txt', 'r')
+    repoURLs = []
+    for line in reposFile:
+        repoURLs.append(line)
+    reposFile.close()
+    for repo in repoURLs:
+        print("Starting {}".format(repo))
+        repo_stats = RepoStats()
+        repo_stats.analyze(repo, 'java')
+        print("Done {}".format(repo))
+
+
 
 
 main()
