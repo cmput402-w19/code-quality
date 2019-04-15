@@ -1,0 +1,7 @@
+{
+ "total_lines": 30700303,
+ "total_commits": 434597,
+ "source_commits": 311235,
+ "commits_with_tests": 155643,
+ "test_lines": 12864830
+}

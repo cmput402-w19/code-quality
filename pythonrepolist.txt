@@ -36,7 +36,7 @@ https://github.com/celery/celery.git
 https://github.com/huge-success/sanic.git
 https://github.com/spotify/luigi.git
 https://github.com/fabric/fabric.git
-https://github.com/geekcomputers/Python.git
+https://github.com/getsentry/sentry.git
 https://github.com/powerline/powerline.git
 https://github.com/locustio/locust.git
 https://github.com/tqdm/tqdm.git
@@ -84,7 +84,6 @@ https://github.com/coleifer/peewee.git
 https://github.com/ShangtongZhang/reinforcement-learning-an-introduction.git
 https://github.com/bottlepy/bottle.git
 https://github.com/sloria/TextBlob.git
-https://github.com/python-pillow/Pillow.git
 https://github.com/miguelgrinberg/flasky.git
 https://github.com/seatgeek/fuzzywuzzy.git
 https://github.com/amueller/word_cloud.git

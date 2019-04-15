@@ -55,6 +55,8 @@
     <mapping directory="$PROJECT_DIR$/repos/davis.js" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/deeplearning4j" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/director" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/django" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/django-rest-framework" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/doT" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/dragula" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/druid" vcs="Git" />
@@ -67,6 +69,7 @@
     <mapping directory="$PROJECT_DIR$/repos/fabric.js" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/faker.js" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/falcon" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/flask" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/flasky" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/flow" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/framework" vcs="Git" />
@@ -83,6 +86,7 @@
     <mapping directory="$PROJECT_DIR$/repos/hexo" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/highlight.js" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/hogan.js" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/httpie" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/hyper" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/impress.js" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/incubator-dubbo" vcs="Git" />
@@ -134,6 +138,7 @@
     <mapping directory="$PROJECT_DIR$/repos/retrofit" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/riot" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/ripple" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/salt" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/schedule" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/script.js" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/scrollreveal" vcs="Git" />
@@ -151,6 +156,7 @@
     <mapping directory="$PROJECT_DIR$/repos/store.js" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/storybook" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/systemjs" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/thefuck" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/thorax" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/three.js" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/repos/tushare" vcs="Git" />

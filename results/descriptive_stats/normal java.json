@@ -1,0 +1,9 @@
+{
+ "actual_commits": "NormaltestResult(statistic=10.956314896479922, pvalue=0.004177018985456901)",
+ "commits_with_tests": "NormaltestResult(statistic=27.987943436275163, pvalue=8.36556547957756e-07)",
+ "source_commits": "NormaltestResult(statistic=13.98051386842036, pvalue=0.0009208099137051521)",
+ "total_lines": "NormaltestResult(statistic=17.544691180835482, pvalue=0.000154959682091796)",
+ "test_lines": "NormaltestResult(statistic=27.830148838678937, pvalue=9.052321386533313e-07)",
+ "number_of_test_files": "NormaltestResult(statistic=15.702184712475363, pvalue=0.00038932645270867654)",
+ "number_of_total_files": "NormaltestResult(statistic=15.702184712475363, pvalue=0.00038932645270867654)"
+}

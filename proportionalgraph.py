@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import os
 
-fileTypes = [".java", ".py", ".js"] # List of all language types to check
+fileTypes = ["java", "py", "js"] # List of all language types to check
 graphName = "Proportion of test lines" # const
 # Used for subfolder name
 
@@ -18,15 +18,17 @@ def makeGraph(f, data, fileType, fileName):
     y = 0
     y2 = 0
     for i in range(len(data["test_lines_per_commit"])):
-        xData.append(i+1)
+        xData.append(i + 1)
         y = y + data["test_lines_per_commit"][i]
         y2 = y2 + data["total_lines_per_commit"][i]
         yData.append(y)
         yData2.append(y2)
+        assert y <= y2
         try:
             y_actual.append(y/y2)
         except:
-            return
+            y_actual.append(0)
+            continue
     
     x = xData
     y = yData

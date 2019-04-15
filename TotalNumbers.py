@@ -10,7 +10,7 @@ xData = []
 yData = []
 repoList = []
 
-fileTypes = [".java", ".py", ".js"] # List of all language types to check
+fileTypes = ["java", "py", "js"]  # List of all language types to check
 class Counter:
     def __init__(self, *args, **kwargs):
         self.total_lines = 0
@@ -36,19 +36,17 @@ class Counter:
             #'head_commit',
         ]
         fileout = {}
-        for repo in json_data:
+        for value in json_values:
             value_array = []
-
-            for value in json_values:
-            
+            for repo in json_data:
                 result = repo[value]
-                value_array.append(result)  
+                value_array.append(result)
 
-            self.total_lines += repo['total_lines']
-            self.total_commits += repo['actual_commits']
-            self.commits_with_tests += repo['commits_with_tests']
-            self.source_commits += repo['source_commits'] 
-            self.test_lines += repo['test_lines'] 
+                self.total_lines += repo['total_lines']
+                self.total_commits += repo['actual_commits']
+                self.commits_with_tests += repo['commits_with_tests']
+                self.source_commits += repo['source_commits']
+                self.test_lines += repo['test_lines']
 
             result = str(describe(value_array))
             fileout[value] = result
@@ -58,9 +56,11 @@ class Counter:
             pass
 
         fileName = fileName.split(".json")[0]
-        file = open("./results/descriptive_stats/" + file_type[1:] + '.json', 'w')
+        file = open("./results/descriptive_stats/" + file_type + '.json', 'w')
         file.write(json.dumps(fileout, indent=1))
         file.close()
+
+
 def main():
     try:
         os.mkdir("./results/descriptive_stats")
@@ -80,7 +80,7 @@ def main():
             fp.close()
 
         s.get_describe_stats(f, data_list, file_type, fileName, file_type) 
-        f= './results/totals {}'.format(file_type)
+        f= './results/descriptive_stats/totals {}.json'.format(file_type)
         fp = open(f, 'w')
         fileout = {
             'total_lines': s.total_lines,

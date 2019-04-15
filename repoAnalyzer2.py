@@ -282,18 +282,18 @@ def main():
     #repo = 'https://github.com/coleifer/peewee.git'
     #repo_stats = RepoStats()
     #repo_stats.analyze(repo, 'python_test')
-    print('Working on javaScriptRepos')
-    reposFile = open('javaScriptRepos.txt', 'r')
-    repoURLs = []
-    for line in reposFile:
-        repoURLs.append(line)
-    reposFile.close()
+    # print('Working on javaScriptRepos')
+    # reposFile = open('javaScriptRepos.txt', 'r')
+    # repoURLs = []
+    # for line in reposFile:
+    #     repoURLs.append(line)
+    # reposFile.close()
 
-    for repo in repoURLs:
-        print("Starting {}".format(repo))
-        repo_stats = RepoStats()
-        repo_stats.analyze(repo, 'js')
-        print("Done {}".format(repo))
+    # for repo in repoURLs:
+    #     print("Starting {}".format(repo))
+    #     repo_stats = RepoStats()
+    #     repo_stats.analyze(repo, 'js')
+    #     print("Done {}".format(repo))
 
     print("Working on python")
     reposFile = open('pythonrepolist.txt', 'r')
@@ -308,17 +308,17 @@ def main():
         repo_stats.analyze(repo, 'py')
         print("Done {}".format(repo))
 
-    print('Working on Java')
-    reposFile = open('javaRepos.txt', 'r')
-    repoURLs = []
-    for line in reposFile:
-        repoURLs.append(line)
-    reposFile.close()
-    for repo in repoURLs:
-        print("Starting {}".format(repo))
-        repo_stats = RepoStats()
-        repo_stats.analyze(repo, 'java')
-        print("Done {}".format(repo))
+    # print('Working on Java')
+    # reposFile = open('javaRepos.txt', 'r')
+    # repoURLs = []
+    # for line in reposFile:
+    #     repoURLs.append(line)
+    # reposFile.close()
+    # for repo in repoURLs:
+    #     print("Starting {}".format(repo))
+    #     repo_stats = RepoStats()
+    #     repo_stats.analyze(repo, 'java')
+    #     print("Done {}".format(repo))
 
 
 
