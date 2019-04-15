@@ -56,6 +56,8 @@ def makeGraph( fileType, i):
         x = xData
         y = yData   # test files per commit
         y2 = yData2 # test lines per commit 
+    #ax.plot(x, y2, label="Lines")
+
         ax.plot(x, y)
 
 
@@ -73,7 +75,7 @@ def makeGraph( fileType, i):
         os.mkdir("./results/" + graphName + "/" + fileType)
     except:
         pass
-    plt.savefig('{}.png'.format("./results/" + graphName + "/" + fileType ))
+    plt.savefig('{}.png'.format("./results/" + graphName + "/" + fileType + "Files" ))
     plt.close()
 
 
