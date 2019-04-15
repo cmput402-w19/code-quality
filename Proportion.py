@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import os
 
-fileTypes = ["java", "python", "javascript"] # List of all language types to check
+fileTypes = ["java", "py", "js"] # List of all language types to check
 graphName = "Proportion" # const
 # Used for subfolder name
 
@@ -34,8 +34,8 @@ def makeGraph(f, data, fileType, fileName):
             yData2.append(float(y3)/float(y3+y4)*100) 
 
     x = xData
-    y = yData
-    y2 = yData2
+    y = yData   # test files per commit
+    y2 = yData2 # test lines per commit 
     
     fig, ax = plt.subplots()
     ax.plot(x, y, label="Files")
