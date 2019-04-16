@@ -1,3 +1,8 @@
+# BugFixesStats.py 
+# expects json files in ./results/language/filename
+# Goes through the json data and outputs a cumulative sum of total bug fixes, compared to the total bug fixes with tests. 
+
+
 import json
 import matplotlib
 import matplotlib.pyplot as plt
