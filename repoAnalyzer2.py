@@ -30,7 +30,7 @@ class RepoStats:
         self.total_fixes = 0
         return super().__init__(*args, **kwargs)
 
-    def analyze(self, repo_path, repo_type):
+    def analyze(self, repo_path, repo_type, last_commit=None):
 
         repo_name = extractRepoName(repo_path)
         if os.path.isfile('./results/{}/'.format(repo_type) + extractRepoName(repo_path) + '.json'):
@@ -127,7 +127,7 @@ class RepoStats:
             branch = 'dev'
 
         self.repo = RepositoryMining('./repos/{}'.format(repo_name), only_in_branch=branch,
-                                     only_modifications_with_file_types=[self.repo_type])
+                                     only_modifications_with_file_types=[self.repo_type],to_commit=last_commit)
         file = open('./results/{}/'.format(repo_type) + extractRepoName(repo_path) + '.json', 'w')
         file.close()
 
@@ -155,8 +155,6 @@ class RepoStats:
             'test_lines_per_commit': self.test_lines_per_commit,
             'total_lines_per_commit': self.total_lines_per_commit,
             'head_commit': self.actual_repo.get_head().hash,
-            "test_files": self.test_files_dict,
-            'all_files': self.all_files
         }
 
         file = open('./results/{}/'.format(repo_type) + extractRepoName(repo_path) + '.json', 'w')
@@ -277,23 +275,27 @@ def extractRepoName(url):
 
 
 def main():
-    #repo = "https://github.com/encode/django-rest-framework.git"
-    #repo = "https://github.com/codelucas/newspaper.git"
-    #repo = 'https://github.com/coleifer/peewee.git'
-    #repo_stats = RepoStats()
-    #repo_stats.analyze(repo, 'python_test')
-    # print('Working on javaScriptRepos')
-    # reposFile = open('javaScriptRepos.txt', 'r')
-    # repoURLs = []
-    # for line in reposFile:
-    #     repoURLs.append(line)
-    # reposFile.close()
+    try:
+        os.mkdir('results')
+        os.mkdir('results/js')
+        os.mkdir('results/py')
+        os.mkdir('results/java')
 
-    # for repo in repoURLs:
-    #     print("Starting {}".format(repo))
-    #     repo_stats = RepoStats()
-    #     repo_stats.analyze(repo, 'js')
-    #     print("Done {}".format(repo))
+    except:
+        pass
+    
+    print('Working on javaScriptRepos')
+    reposFile = open('javaScriptRepos.txt', 'r')
+    repoURLs = []
+    for line in reposFile:
+        repoURLs.append(line)
+    reposFile.close()
+
+    for repo in repoURLs:
+        print("Starting {}".format(repo))
+        repo_stats = RepoStats()
+        repo_stats.analyze(repo, 'js')
+        print("Done {}".format(repo))
 
     print("Working on python")
     reposFile = open('pythonrepolist.txt', 'r')
@@ -308,19 +310,18 @@ def main():
         repo_stats.analyze(repo, 'py')
         print("Done {}".format(repo))
 
-    # print('Working on Java')
-    # reposFile = open('javaRepos.txt', 'r')
-    # repoURLs = []
-    # for line in reposFile:
-    #     repoURLs.append(line)
-    # reposFile.close()
-    # for repo in repoURLs:
-    #     print("Starting {}".format(repo))
-    #     repo_stats = RepoStats()
-    #     repo_stats.analyze(repo, 'java')
-    #     print("Done {}".format(repo))
+    print('Working on Java')
+    reposFile = open('javaRepos.txt', 'r')
+    repoURLs = []
+    for line in reposFile:
+        repoURLs.append(line)
+    reposFile.close()
+    for repo in repoURLs:
+        print("Starting {}".format(repo))
+        repo_stats = RepoStats()
+        repo_stats.analyze(repo, 'java')
+        print("Done {}".format(repo))
 
 
-
-
-main()
+if __name__ == '__main__':
+    main()

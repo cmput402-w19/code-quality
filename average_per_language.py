@@ -8,6 +8,7 @@ import os
 fileTypes = ["java", "py", "js"] # List of all language types to check
 graphName = "total_average" # const
 # Used for subfolder name
+average_array_total = []
 
 def average_for_file_type(data,fileType):
 
@@ -56,7 +57,7 @@ def average_for_file_type(data,fileType):
     for commit in array_of_proportions_for_all_commit:
         if len(commit) == 0:
             continue
-        average_array.append(sum(commit)/len(commit))
+        average_array.append(sum(commit)/len(commit)*100)
         x_array.append(commit_count)
         commit_count += 1
     x = x_array
@@ -66,13 +67,9 @@ def average_for_file_type(data,fileType):
     ax.plot(x, y, label="Average of proportion of test code for {} repo".format(fileType))
     ax.legend()
     
-   
+    plt.ylim(0, 100)   
     ax.set(xlabel="Commit #", ylabel="Proportion of test code", title="Average proportion of test code for {} repos".format(fileType))
     ax.grid()
-    try:
-        os.mkdir("./results/" + graphName + "/" + fileType)
-    except:
-        pass
     plt.savefig('{}.png'.format("./results/" + graphName + "/" + fileType))
     plt.close()
 

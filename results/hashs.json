@@ -1,0 +1,905 @@
+{
+ "js_repos": [
+  {
+   "https://github.com/vuejs/vue.git": "f478ab80106b4993398761608aee71b9724e2227"
+  },
+  {
+   "https://github.com/jquery/jquery.git": "cf9fe0f6a104a0f527c7c3f441485c19e2b19c69"
+  },
+  {
+   "https://github.com/mrdoob/three.js.git": "04c4fb02c53f36454b1fa558b4972196412227c1"
+  },
+  {
+   "https://github.com/reduxjs/redux.git": "376ad3c098866ee628020b2bf5512bf6604270b5"
+  },
+  {
+   "https://github.com/angular/angular.git": "ac3dc3cfc6925af10fffd37e026554806c04ec4f"
+  },
+  {
+   "https://github.com/meteor/meteor.git": "5e24494e01f2ad03dc1329866e25b360899b36b8"
+  },
+  {
+   "https://github.com/moment/moment.git": "d0f0dd8f40be987593767a3dc5e27c45c6a3fa49"
+  },
+  {
+   "https://github.com/lodash/lodash.git": "750067f42d3aa5f927604ece2c6df0ff2b2e9d72"
+  },
+  {
+   "https://github.com/ElemeFE/element.git": "c6dbd286e124ae1ae0314364afb64acc93e0f9e8"
+  },
+  {
+   "https://github.com/storybooks/storybook.git": "f5b61926c49768a1dd30cd7a235fe3295b5d4e0b"
+  },
+  {
+   "https://github.com/yarnpkg/yarn.git": "8a671f10c86b66baa74ef6f4cd24d4ca8ee5067a"
+  },
+  {
+   "https://github.com/babel/babel.git": "165ef2941694184d83307b41d311751bd3dabae0"
+  },
+  {
+   "https://github.com/parcel-bundler/parcel.git": "636bb50baeae15730c3b91cd3b58b457c31f7200"
+  },
+  {
+   "https://github.com/juliangarnier/anime.git": "875a3d6745d4bff2e4c6ffe0e2d24aac3bf8a45a"
+  },
+  {
+   "https://github.com/Tonejs/Tone.js.git": "bb67e9c83d5553dfaa3c10babc147600aa14c147"
+  },
+  {
+   "https://github.com/adobe/brackets.git": "f1a5f23967e116363fc037e3bb4f7be507aa5512"
+  },
+  {
+   "https://github.com/zeit/hyper.git": "26846cd8471b9abae3dfb668f69ced45704c442e"
+  },
+  {
+   "https://github.com/alvarotrigo/fullPage.js.git": "8bed990477d0d18366dc0a887cf3abd511cdab89"
+  },
+  {
+   "https://github.com/mozilla/pdf.js.git": "74561f58b55fc5570c1d273d1eb53ed0f1725464"
+  },
+  {
+   "https://github.com/hexojs/hexo.git": "a6dc0ea28dddad1b5f1bad7c6f86f1e0627b564a"
+  },
+  {
+   "https://github.com/zenorocha/clipboard.js.git": "85981026d1f464c9f645ffe543a3ba0d40c9b6c4"
+  },
+  {
+   "https://github.com/caolan/async.git": "4330d536c106592139fa82062494c9dba0da1fdb"
+  },
+  {
+   "https://github.com/videojs/video.js.git": "1a52b6971e4b7c46faab6ee62a9064186939d5f6"
+  },
+  {
+   "https://github.com/jashkenas/underscore.git": "36eef3c118041ae6386b6bba2b48b099e57ca0e5"
+  },
+  {
+   "https://github.com/Modernizr/Modernizr.git": "5afbd1205843ea0c3bb920f073a47efc783533b4"
+  },
+  {
+   "https://github.com/select2/select2.git": "9f8b6fff405924246f512dd4f39091d5a89f931a"
+  },
+  {
+   "https://github.com/pixijs/pixi.js.git": "de1edc7757f254a0f21e943552751e1c5e5a793d"
+  },
+  {
+   "https://github.com/RocketChat/Rocket.Chat.git": "4987ca221c21337e361d1b8dfbf38869a4ec62ea"
+  },
+  {
+   "https://github.com/emberjs/ember.js.git": "27255073091ef4c020ed8bf552c54f5b3f54d25b"
+  },
+  {
+   "https://github.com/hammerjs/hammer.js.git": "563b5b1e4bfbb5796798dd286cd57b7c56f1eb9e"
+  },
+  {
+   "https://github.com/Reactive-Extensions/RxJS.git": "6770d24307ed4baaecdbb21cfc178c13e459f42f"
+  },
+  {
+   "https://github.com/facebook/flow.git": "d928db23bcd7457965c77a933e3ad217eb1cd70d"
+  },
+  {
+   "https://github.com/webtorrent/webtorrent.git": "f8923a66a8b1178a412b067bc913e267025b3d57"
+  },
+  {
+   "https://github.com/kriasoft/react-starter-kit.git": "8d6c018f3198dec2a580ecafb011a32f06e38dbf"
+  },
+  {
+   "https://github.com/mobxjs/mobx.git": "805c02d685ba2993b55f0fa5d27573b0dfdfeba1"
+  },
+  {
+   "https://github.com/bevacqua/dragula.git": "a8b85a58b4be6b64d16fede69f2017b77e05d01b"
+  },
+  {
+   "https://github.com/Marak/faker.js.git": "a9a11ee55ae1ae528ffc14c869a4c8353e2ba419"
+  },
+  {
+   "https://github.com/sequelize/sequelize.git": "7a6c60d73202f35278a44b6c649f44350652e4d9"
+  },
+  {
+   "https://github.com/mochajs/mocha.git": "f1fe632a5aca224994fa8c1240be6852bec236a8"
+  },
+  {
+   "https://github.com/scrollreveal/scrollreveal.git": "c98fad79f4750dfd80797414e7d94f1cddd2109c"
+  },
+  {
+   "https://github.com/date-fns/date-fns.git": "6f41d53ba25dea5963dfd73a7cbc954f2a43048f"
+  },
+  {
+   "https://github.com/bower/bower.git": "67741b4bfe465ef0b816f7f2811ce6ba6d065c1a"
+  },
+  {
+   "https://github.com/spmjs/spm.git": "d940477966ac3c3772a75ae610082cf628fbfb12"
+  },
+  {
+   "https://github.com/caolan/jam.git": "befa3f276dcb9ce593bc0d913e0313c50835f16c"
+  },
+  {
+   "https://github.com/jspm/jspm-cli.git": "032c46bfd7daa026df819099418bbded3037d605"
+  },
+  {
+   "https://github.com/ender-js/Ender.git": "fa5bf4c1d8a382239eea7f3be2142d32c9479157"
+  },
+  {
+   "https://github.com/volojs/volo.git": "1fc449e53a3d4e5cf8178bf8be99be5b70ec3160"
+  },
+  {
+   "https://github.com/duojs/duo.git": "a01cfa748619c963d5c9824273db2e7390c92eb2"
+  },
+  {
+   "https://github.com/ecomfe/esl.git": "e7a0790fa65ef6a1d642940250152cef72816ff1"
+  },
+  {
+   "https://github.com/requirejs/requirejs.git": "2516bc0a2995b4eef9902b7daa944873fa2d0d78"
+  },
+  {
+   "https://github.com/browserify/browserify.git": "7ad39ce835b6b3aa5718af04c8f57a5aeef6c636"
+  },
+  {
+   "https://github.com/seajs/seajs.git": "0ce0b19e16dc4708007fb0ded006b08ad379540d"
+  },
+  {
+   "https://github.com/headjs/headjs.git": "edc8427191a633d80e7372c49e6d28a098be766f"
+  },
+  {
+   "https://github.com/ded/script.js.git": "95ca7a60c75e266a492262e29dacb3ec2ea15a95"
+  },
+  {
+   "https://github.com/cujojs/curl.git": "13170edcbeb9dc55c48ea00e5fec890eec75b59f"
+  },
+  {
+   "https://github.com/lrsjng/modulejs.git": "dee641c9b63446650cc458dec936031371b23895"
+  },
+  {
+   "https://github.com/systemjs/systemjs.git": "a87456b78f52e1046f94383f3300aebbe525392a"
+  },
+  {
+   "https://github.com/qunitjs/qunit.git": "371bdadbfa479dccfe7dddbf8ec5c66732f7b6a7"
+  },
+  {
+   "https://github.com/azer/prova.git": "938e48dcb4f5fe3b3905633f2fb8a0bae7ff31a1"
+  },
+  {
+   "https://github.com/dalekjs/dalek.git": "9e24a86adb134f1d7d8feefa63805e9cb82c9ce9"
+  },
+  {
+   "https://github.com/sinonjs/sinon.git": "2430fd9af7bfc02bf4b61c621ff12003c41fa7fb"
+  },
+  {
+   "https://github.com/aurelia/framework.git": "125b74db248c1d59ad21534ed2f5ea1e6ec36f1d"
+  },
+  {
+   "https://github.com/jashkenas/backbone.git": "75e6d0ce6394bd2b809823c7f7dc014ddb6ae287"
+  },
+  {
+   "https://github.com/spine/spine.git": "2d3bf2345e39b1adf96576423876e824aeeea888"
+  },
+  {
+   "https://github.com/canjs/canjs.git": "5c63a9c1365137fb16fc2538aa136afebbdbe6fa"
+  },
+  {
+   "https://github.com/developit/preact.git": "59665113098a201302b7d2d95556a217593baf3e"
+  },
+  {
+   "https://github.com/riot/riot.git": "46cdbe334cf867f3596e8c5722103924c891b7e6"
+  },
+  {
+   "https://github.com/walmartlabs/thorax.git": "c13bc9977d30592b9967f4844667f60a6ffbe787"
+  },
+  {
+   "https://github.com/chaplinjs/chaplin.git": "49bc7d6a325f7d0d9c4ba2a497773c0cf40be5b1"
+  },
+  {
+   "https://github.com/marionettejs/backbone.marionette.git": "931bb6c43ac18236cbb3ccd18e4811b2e1ca12f7"
+  },
+  {
+   "https://github.com/ripplejs/ripple.git": "77f59138960d803dad062114ba3b5ac0286af071"
+  },
+  {
+   "https://github.com/janl/mustache.js.git": "38b1448e65f1d4716c3e3ad792ae6ab3aaf487ab"
+  },
+  {
+   "https://github.com/twitter/hogan.js.git": "7e340e9e4dde8faebd1ff34e62abc1c5dd8adb55"
+  },
+  {
+   "https://github.com/olado/doT.git": "299b4da24a99ff2d3f8a12be873bf06a85f13ac8"
+  },
+  {
+   "https://github.com/linkedin/dustjs.git": "e0e25f7c1bc5905090e8160c28b8e83ab7f34e20"
+  },
+  {
+   "https://github.com/chartjs/Chart.js.git": "faad02331393b5ae4f07eafc119002fa21966118"
+  },
+  {
+   "https://github.com/paperjs/paper.js.git": "330b7d0eb99a27d1f532b051228cfa9d757dcb3c"
+  },
+  {
+   "https://github.com/fabricjs/fabric.js.git": "765f11537b5002ffe5b556f47ccccbfb8428d022"
+  },
+  {
+   "https://github.com/almende/vis.git": "5563fc616885578ad51b2dfa6ccf70ccebf06126"
+  },
+  {
+   "https://github.com/jonobr1/two.js.git": "642268269e5ac1a8f991e77a741687fccbe1409e"
+  },
+  {
+   "https://github.com/pa7/heatmap.js.git": "4e64f5ae5754c84fea363f0fcf24bea4795405ff"
+  },
+  {
+   "https://github.com/jacomyal/sigma.js.git": "c49589f2419ca98542fd21b82b926dea21bb9fef"
+  },
+  {
+   "https://github.com/rmm5t/jquery-timeago.git": "e13ad6d21cfb8a5c0a04a6273d67e71edf27339c"
+  },
+  {
+   "https://github.com/MatthewMueller/date.git": "3a918292765e511de5a714cca871002b19e14812"
+  },
+  {
+   "https://github.com/marcuswestin/store.js.git": "b8e22fea8738fc19da4d9e7dbf1cda6e5185c481"
+  },
+  {
+   "https://github.com/js-cookie/js-cookie.git": "d2724a87a29cbf7ee539452fb42b3e3a1aff95a8"
+  },
+  {
+   "https://github.com/addyosmani/basket.js.git": "f8ea6e9c645f2f146106bfb6a806c9e7b2eb0de8"
+  },
+  {
+   "https://github.com/bevacqua/contra.git": "661cc16335ea6cf91f16965bea4c8930c09b2f2a"
+  },
+  {
+   "https://github.com/visionmedia/page.js.git": "bdc0fafc96be4fab37ec87fc621ba0bcc6cef174"
+  },
+  {
+   "https://github.com/flatiron/director.git": "b507baed25cfd38307808ea41a0d6305ee6e1ebf"
+  },
+  {
+   "https://github.com/olivernn/davis.js.git": "0da596aa0b13f041f71c76bef828cc23f54455ef"
+  },
+  {
+   "https://github.com/cure53/DOMPurify.git": "77df29e187eded28c1fa5080cf84762a108f1bbc"
+  },
+  {
+   "https://github.com/axios/axios.git": "283d7b306ce231f092d28e01713905e5c1600d14"
+  },
+  {
+   "https://github.com/SGrondin/bottleneck.git": "e81ebbcc1b8ba3e8b1a48bf7e1fef5b9b9d77b05"
+  },
+  {
+   "https://github.com/bestiejs/benchmark.js.git": "42f3b732bac3640eddb3ae5f50e445f3141016fd"
+  },
+  {
+   "https://github.com/highlightjs/highlight.js.git": "cd73c87b85d3b5e65584fdc4016d95a47ffa94c5"
+  },
+  {
+   "https://github.com/PrismJS/prism.git": "d2089d83509c1bcc3a5e74cbfc896680b2f76560"
+  },
+  {
+   "https://github.com/guillaumepotier/Parsley.js.git": "7fc5786e95f7ba2f9dd754c856d84b39aa5da9f2"
+  },
+  {
+   "https://github.com/arasatasaygin/is.js.git": "56294950656ba58f940248510cdf3e45af357a1e"
+  },
+  {
+   "https://github.com/impress/impress.js.git": "3e4d7d2e42be6319ddeb8d69cff17aadfd97ac39"
+  }
+ ],
+ "java_repos": [
+  {
+   "https://github.com/square/retrofit.git": "fc14b32026a5a7b487f27483c18b2263d84bcf60"
+  },
+  {
+   "https://github.com/iluwatar/java-design-patterns.git": "fedc2d9e47cb2b44aa4ea23aed9d117bbd4ed069"
+  },
+  {
+   "https://github.com/elastic/elasticsearch.git": "454e4967f14f0a8e5377170be73510882764f0fd"
+  },
+  {
+   "https://github.com/ReactiveX/RxJava.git": "c04cfb8366534560e045f86201c05991763e1643"
+  },
+  {
+   "https://github.com/spring-projects/spring-boot.git": "8fd8a9b6184555b26e58548190ab74de46aa3dce"
+  },
+  {
+   "https://github.com/square/okhttp.git": "9bd3b10e61f929c5b84114e04f83b07604c5af15"
+  },
+  {
+   "https://github.com/google/guava.git": "0194a8d1e65a5dbd732fdde7253744887e8e35cf"
+  },
+  {
+   "https://github.com/spring-projects/spring-framework.git": "44df98c82da75114081ba02364e467004252bb77"
+  },
+  {
+   "https://github.com/PhilJay/MPAndroidChart.git": "ed8876cef283249b63f12e2bb8931dd9e444ee17"
+  },
+  {
+   "https://github.com/bumptech/glide.git": "fbd31f41d164c3b93248556d2601da33d13f2c30"
+  },
+  {
+   "https://github.com/apache/incubator-dubbo.git": "1706807a1c9221fb13a24a8b318a56c699eea67d"
+  },
+  {
+   "https://github.com/airbnb/lottie-android.git": "a483b7695e2a9ec5e8ea4b50b1223f806e890ca5"
+  },
+  {
+   "https://github.com/JakeWharton/butterknife.git": "c0e6fa3858c226443618f87e2dded9a5d2205345"
+  },
+  {
+   "https://github.com/square/leakcanary.git": "0a5f74b5b98efd16a776cb1a8b609a87ed3dcc75"
+  },
+  {
+   "https://github.com/zxing/zxing.git": "0e8c46e2620523f85347de9371773437c6efef9a"
+  },
+  {
+   "https://github.com/greenrobot/EventBus.git": "2e7c0461106a3c261859579ec6fdcb5353ed31a4"
+  },
+  {
+   "https://github.com/crossoverJie/JCSprout.git": "b13a7c321821b0eb7e9e0db16c9577f450e71d9d"
+  },
+  {
+   "https://github.com/alibaba/druid.git": "4a79e70d6b37b9fbf853dfd7f2209a3190be699d"
+  },
+  {
+   "https://github.com/facebook/fresco.git": "7321b1726f1e547948bd9c3288da0435117994fc"
+  },
+  {
+   "https://github.com/android10/Android-CleanArchitecture.git": "4dda6bcd66f6292625ae1dbaf41e0e8431f91e28"
+  },
+  {
+   "https://github.com/eugenp/tutorials.git": "9ff896fe4e8c669bccb8f0f7cf3a2181494222ad"
+  },
+  {
+   "https://github.com/google/ExoPlayer.git": "4bc79c9465abd00e29ff576c5f7a7517be632f5a"
+  },
+  {
+   "https://github.com/ctripcorp/apollo.git": "811f31b3944f2ac10ba21002b6d9ec00741d9add"
+  },
+  {
+   "https://github.com/ityouknow/spring-boot-examples.git": "cac22d8a371c768d60e1f4729ec43b957709619a"
+  },
+  {
+   "https://github.com/jenkinsci/jenkins.git": "e460e6c40b0663165aa81f4420438480a264f1ea"
+  },
+  {
+   "https://github.com/alibaba/arthas.git": "bfc7eb8602be48bfb705956e2ad7f67fa212b770"
+  },
+  {
+   "https://github.com/DrKLO/Telegram.git": "e397bd9afdfd9315bf099f78a903f8754d297d7a"
+  },
+  {
+   "https://github.com/signalapp/Signal-Android.git": "6d111e5f680be1cffdf719e490e045311d80bd7f"
+  },
+  {
+   "https://github.com/hankcs/HanLP.git": "668ec6b2e3a15cb30832aff2afda218cad37c4ff"
+  },
+  {
+   "https://github.com/greenrobot/greenDAO.git": "a6bfdb63d399694085c040755a1616022b9c5fea"
+  },
+  {
+   "https://github.com/orhanobut/logger.git": "4a85b788a09b166e0953db09d582e9cc51b396e9"
+  },
+  {
+   "https://github.com/facebook/stetho.git": "9421aaa7e1330d16ade22b20d486e8decac7897e"
+  },
+  {
+   "https://github.com/androidannotations/androidannotations.git": "dca07c4ab39347d1b442a8739c1673587b1fb85a"
+  },
+  {
+   "https://github.com/openzipkin/zipkin.git": "7cac371c5e7675e69bcbb992665cc7bd7f20ec74"
+  },
+  {
+   "https://github.com/EnterpriseQualityCoding/FizzBuzzEnterpriseEdition.git": "cdfac751e51e18607b67d6ca3794a8d703863aa9"
+  },
+  {
+   "https://github.com/deeplearning4j/deeplearning4j.git": "810dfcdcbe434969295bcb60035a2f87baf8beea"
+  },
+  {
+   "https://github.com/realm/realm-java.git": "c84e22ab4ca345436baa0650aa10a681b4309eeb"
+  },
+  {
+   "https://github.com/mybatis/mybatis-3.git": "bee7ba202cbbcae47ab68da773627d7ab385da1f"
+  },
+  {
+   "https://github.com/JakeWharton/ViewPagerIndicator.git": "8cd549f23f3d20ff920e19a2345c54983f65e26b"
+  },
+  {
+   "https://github.com/LMAX-Exchange/disruptor.git": "4266d00c5250190313446fdd7c8aa7a4edb5c818"
+  },
+  {
+   "https://github.com/wix/react-native-navigation.git": "9d7d7f4600ce4994ed680c123f59eb198130a32c"
+  },
+  {
+   "https://github.com/Bigkoo/Android-PickerView.git": "da6424a9b7d0495ec600ed1b2b076eb58044a7be"
+  },
+  {
+   "https://github.com/brettwooldridge/HikariCP.git": "c509ec1a3f1e19769ee69323972f339cf098ff4b"
+  },
+  {
+   "https://github.com/Tencent/VasSonic.git": "c2b9fd2e4e45a249149487d9f81ef15d6e09d7f5"
+  },
+  {
+   "https://github.com/eclipse-vertx/vert.x.git": "840644c541d3316b50094b918f883b2654062fcd"
+  },
+  {
+   "https://github.com/pockethub/PocketHub.git": "51ed2f712ca2a10696f1550a2e374f330ed9f43f"
+  },
+  {
+   "https://github.com/macrozheng/mall.git": "1bf9a4b7b7f0fcacad46d8e071123fc4b8ec8992"
+  },
+  {
+   "https://github.com/ksoichiro/Android-ObservableScrollView.git": "47a5fb2db5e93d923a8c6772cde48bbb7d932345"
+  },
+  {
+   "https://github.com/alibaba/ARouter.git": "93b328569bbdbf75e4aa87f0ecf48c69600591b2"
+  },
+  {
+   "https://github.com/alibaba/vlayout.git": "bbd2ba451361d1ebde6dca00d7e6ffa89bf6e1cf"
+  },
+  {
+   "https://github.com/prestodb/presto.git": "3a17838b61517bb1f5772bcb9b8c158ac00279d4"
+  },
+  {
+   "https://github.com/apache/hadoop.git": "0c1fec34f4b0980920b6357e81acd9d8a7fb3a94"
+  },
+  {
+   "https://github.com/permissions-dispatcher/PermissionsDispatcher.git": "95c7286ae4cb42cc6880d4d4031619ac1bacf03b"
+  },
+  {
+   "https://github.com/JeffLi1993/springboot-learning-example.git": "95c76fabfdc227deebe0198539bc9a398f824b79"
+  },
+  {
+   "https://github.com/dianping/cat.git": "4e62b677e916640f3fb1ce6379cc6938956d3e38"
+  },
+  {
+   "https://github.com/dbeaver/dbeaver.git": "46ec39339be857ba3ed2ffa55c2f34765567404a"
+  },
+  {
+   "https://github.com/roughike/BottomBar.git": "44072d5c21bcdddc2a1223eb170f5f6b5a92f095"
+  },
+  {
+   "https://github.com/tbruyelle/RxPermissions.git": "f6e56370cd883dccc634553f982248f3bbb0cd69"
+  },
+  {
+   "https://github.com/perwendel/spark.git": "080fb1f9d6e580f6742e9589044c7420d3157b8b"
+  },
+  {
+   "https://github.com/apache/flink.git": "68ab581098c627dcdcab8030b3b0b5f80e295e43"
+  },
+  {
+   "https://github.com/apache/incubator-druid.git": "60dd75d3d957a99c7eb28f59336f596310cf48e7"
+  },
+  {
+   "https://github.com/bilibili/DanmakuFlameMaster.git": "e2846461a09e33720a049f628f09c653f55531f0"
+  },
+  {
+   "https://github.com/rzwitserloot/lombok.git": "69e6932b81f9e6e17da3097ac6e576a261d3e4c1"
+  },
+  {
+   "https://github.com/Tencent/QMUI_Android.git": "6ff5493a05845918c126cce8a3e639f8d996481b"
+  },
+  {
+   "https://github.com/dyc87112/SpringBoot-Learning.git": "61a12bc741c25c9c414237e169f4f9f370967716"
+  },
+  {
+   "https://github.com/Netflix/eureka.git": "48446d956be09df6650a3c00b7ebd7e2d1e1544f"
+  },
+  {
+   "https://github.com/lingochamp/FileDownloader.git": "53bca84d573505ff78899c4aa2056c3d40384c1b"
+  },
+  {
+   "https://github.com/alibaba/canal.git": "67faf0e03ef0de75339db1ee6621e7b843bb1c8f"
+  },
+  {
+   "https://github.com/google/guice.git": "81af4ad5ce1c2b28b0617747eca76367addbcb4e"
+  },
+  {
+   "https://github.com/xetorthio/jedis.git": "ef4ab403f9d8fd88bd05092fea96de2e9db0bede"
+  },
+  {
+   "https://github.com/iBotPeaches/Apktool.git": "cc194daf8366b850d6b0888343269dde1b9d837c"
+  },
+  {
+   "https://github.com/code4craft/webmagic.git": "be892b80bf6682cd063d30ac25a79be0c079a901"
+  },
+  {
+   "https://github.com/apereo/cas.git": "abbdea63cb7972b66266326c971183a5b1c15a71"
+  },
+  {
+   "https://github.com/swagger-api/swagger-core.git": "ba2d7f7c419bf3542d742bfa51d8c9be4b11fce1"
+  },
+  {
+   "https://github.com/apache/storm.git": "1976cb332bc6e8dceaec278fb1c3927627981081"
+  },
+  {
+   "https://github.com/ben-manes/caffeine.git": "91eec88be93f16549ce82dd2f17959fd8eba75dd"
+  },
+  {
+   "https://github.com/springside/springside4.git": "8950746bb53ce209b4cb5d2d1706712e9c6a0efc"
+  },
+  {
+   "https://github.com/google/android-classyshark.git": "bc096cb489a22c63849fc86d1eda53fb4bf36bbe"
+  },
+  {
+   "https://github.com/google/j2objc.git": "471504a735b48d5d4ace51afa1542cc4790a921a"
+  },
+  {
+   "https://github.com/eclipse/che.git": "d75dc5cd5460a2885be3ee12a25a36ef38249533"
+  },
+  {
+   "https://github.com/zaproxy/zaproxy.git": "618b4111a7e4602d77cc1e985e482145062e9457"
+  },
+  {
+   "https://github.com/antlr/antlr4.git": "837aa60e2c4736e242432c2ac93ed2de3b9eff3b"
+  },
+  {
+   "https://github.com/airbnb/epoxy.git": "73f5c2b4c848c17f2e63b5a20518e142fbad2c48"
+  },
+  {
+   "https://github.com/square/otto.git": "2a67589abd91879cf23a8c96542b59349485ec3d"
+  },
+  {
+   "https://github.com/alibaba/fescar.git": "63a071f04873314527346e7df52a9ee74b2fcf84"
+  },
+  {
+   "https://github.com/b3log/solo.git": "885cbd55f82afb9bdcc307379e0566269ebd648e"
+  },
+  {
+   "https://github.com/trello/RxLifecycle.git": "b0a9eb54867f0d72b9614d24091c59dfd4b2d5c1"
+  },
+  {
+   "https://github.com/codecentric/spring-boot-admin.git": "e1017ad116d706df410e50d905afb5d747527154"
+  },
+  {
+   "https://github.com/hackware1993/MagicIndicator.git": "04aecfde666ed0ae39d185e47e9ed00988fad6ec"
+  },
+  {
+   "https://github.com/amitshekhariitbhu/Android-Debug-Database.git": "1cb6137e72a74c2dcdfc44d1552ba1fde15a9b96"
+  },
+  {
+   "https://github.com/pxb1988/dex2jar.git": "9cfc8ba805a98b4585bab1831b47b29969aa85e4"
+  },
+  {
+   "https://github.com/facebook/litho.git": "7688dbf0f98764139a00988b221d0b8bb9a1c87c"
+  },
+  {
+   "https://github.com/nhaarman/ListViewAnimations.git": "23617960178fb5af3099c07996569cc305a40945"
+  },
+  {
+   "https://github.com/koush/AndroidAsync.git": "fe046714a95a01fe8be3566be998ca2f345d5808"
+  },
+  {
+   "https://github.com/koush/ion.git": "6e7414fdca1b4e03650092fac56db5d04158afaf"
+  },
+  {
+   "https://github.com/mockito/mockito.git": "881e09ebd33d78e9c226afa37548bf043fe82b4b"
+  },
+  {
+   "https://github.com/netty/netty.git": "86dd3886374323ac1ac8011b4a4716706bb7c47b"
+  },
+  {
+   "https://github.com/skylot/jadx.git": "ccb9c4600599405c698a78326654067ce4d904ba"
+  },
+  {
+   "https://github.com/alibaba/fastjson.git": "10dfa4662cdd2727c84db5edde12fc729d8d3b1b"
+  },
+  {
+   "https://github.com/Netflix/Hystrix.git": "3cb21589895e9f8f87cfcdbc9d96d9f63d48b848"
+  }
+ ],
+ "python_repos": [
+  {
+   "https://github.com/saltstack/salt.git": "cd8d7a5582397c950d5ce42360410744a49785de"
+  },
+  {
+   "https://github.com/pallets/flask.git": "86bf9dca72cd188813e26ef5dd972101ef8983cf"
+  },
+  {
+   "https://github.com/nvbn/thefuck.git": "828ae537da5d7eb7a2a5c9f976b90975adfe1f43"
+  },
+  {
+   "https://github.com/jakubroztocil/httpie.git": "fd44f1af93ce1d2c84f324b8474d2d075b5a7b13"
+  },
+  {
+   "https://github.com/django/django.git": "571ab44e8a8936014c22e7eebe4948d9611fd7ce"
+  },
+  {
+   "https://github.com/keras-team/keras.git": "35093bc9bb14a66d09fe6ea26e302df8ffad64f4"
+  },
+  {
+   "https://github.com/kennethreitz/requests.git": "9742da7f91f595796a412a8150aacc00191be039"
+  },
+  {
+   "https://github.com/ansible/ansible.git": "a4d0c24bbf1dfa706261877b8a81a8bed66d4b8f"
+  },
+  {
+   "https://github.com/scikit-learn/scikit-learn.git": "a8f417eb04932b8aa1ce2d808107195d74f1d798"
+  },
+  {
+   "https://github.com/scrapy/scrapy.git": "92fa657f9e6c3dfa37e58395ef32968792a858d0"
+  },
+  {
+   "https://github.com/certbot/certbot.git": "3a2e9ff1fa48112ead871de4f6865f47b6245455"
+  },
+  {
+   "https://github.com/TheAlgorithms/Python.git": "52d2fbf3cfd646b2dafd5a451c8863887a261e85"
+  },
+  {
+   "https://github.com/tornadoweb/tornado.git": "c447875a1058f4768c2995ddd9ebb0eaddd3f32e"
+  },
+  {
+   "https://github.com/pandas-dev/pandas.git": "90a85e0b154833577a4023f643d8aace0c0ae7f5"
+  },
+  {
+   "https://github.com/faif/python-patterns.git": "fc3d07221514b18130857d8904d88e798d2c731c"
+  },
+  {
+   "https://github.com/ageitgey/face_recognition.git": "8217bd259181f9dc3f64c6f15e612efea5a0ff1d"
+  },
+  {
+   "https://github.com/home-assistant/home-assistant.git": "0a3e11aa12e49977f95c211989e6600d7f5df58b"
+  },
+  {
+   "https://github.com/python/cpython.git": "606c66a17faf34a4e74d4829e8fe5ad0d2879434"
+  },
+  {
+   "https://github.com/donnemartin/interactive-coding-challenges.git": "fe227a3fe3e753a147fc7c27cb4a7c4f46a45138"
+  },
+  {
+   "https://github.com/pypa/pipenv.git": "6c62d23cfcd1255b62bf7ef31b97caa5af492f46"
+  },
+  {
+   "https://github.com/docker/compose.git": "5265f63c34154bb9389bdeba6e60ebb16d6cd525"
+  },
+  {
+   "https://github.com/donnemartin/data-science-ipython-notebooks.git": "5b3c00d462c6e9200315afe46d0093948621eb95"
+  },
+  {
+   "https://github.com/reddit-archive/reddit.git": "753b17407e9a9dca09558526805922de24133d53"
+  },
+  {
+   "https://github.com/keon/algorithms.git": "638b43caae6bf40954dcce4d7d8c271105ae8b79"
+  },
+  {
+   "https://github.com/mitmproxy/mitmproxy.git": "8353f4a55afeec9d30727d91d642e8b8af4040f8"
+  },
+  {
+   "https://github.com/google/python-fire.git": "1bfc1d09279d5712cf01672bec0ae941ffccb160"
+  },
+  {
+   "https://github.com/encode/django-rest-framework.git": "29cbe574a384c3bcc09434a3a9c5ff0cb7576b99"
+  },
+  {
+   "https://github.com/HelloZeroNet/ZeroNet.git": "719df4ac88a06321298711753cad6a79db002f6e"
+  },
+  {
+   "https://github.com/ipython/ipython.git": "4f901de17aff2132365fc3741fc5b4b8a9a98dc6"
+  },
+  {
+   "https://github.com/nicolargo/glances.git": "727042042a47702adedc567965fe223028a5cfc2"
+  },
+  {
+   "https://github.com/binux/pyspider.git": "3fccfabe2b057b7a56d4a4c79dc0dd6cd2239fe9"
+  },
+  {
+   "https://github.com/explosion/spaCy.git": "bbf6f9f764ccd44258c888c4b0f6b00ff1f5f06a"
+  },
+  {
+   "https://github.com/StevenBlack/hosts.git": "e61335f7e1599261d0675c870e8bfdf4a83c1da6"
+  },
+  {
+   "https://github.com/getredash/redash.git": "1524d061499676d2d1bba45bc943e3b7703b0330"
+  },
+  {
+   "https://github.com/celery/celery.git": "f2cab7715cceafcae1343fdcdc65704e0a2c751f"
+  },
+  {
+   "https://github.com/huge-success/sanic.git": "53f45810ffd38969cd9a24ad9d428ff1dee44378"
+  },
+  {
+   "https://github.com/spotify/luigi.git": "c0316de3bb96350401fd59d839ab89d8cd5a6726"
+  },
+  {
+   "https://github.com/fabric/fabric.git": "e9939d68b734935f0c98d98817912ad7c698238f"
+  },
+  {
+   "https://github.com/getsentry/sentry.git": "a652dda4d53f11573c0a30888ded38179f29ab2a"
+  },
+  {
+   "https://github.com/powerline/powerline.git": "5d82d544f3366a214732aeb8f781d50ced38ceef"
+  },
+  {
+   "https://github.com/locustio/locust.git": "ed542b0233d901896d2025eda22e647866ef408f"
+  },
+  {
+   "https://github.com/tqdm/tqdm.git": "ebda7120efef500f6a7c8dea80e5ea6f47090803"
+  },
+  {
+   "https://github.com/zulip/zulip.git": "ae5496020b36b901f0284dd588dba1f367ba262c"
+  },
+  {
+   "https://github.com/apachecn/AiLearning.git": "31462e0d5983712bb54d00b01b9d76e6cdda0344"
+  },
+  {
+   "https://github.com/bokeh/bokeh.git": "4f666e270b3a71c4c6a0943a6df20cd18a69557b"
+  },
+  {
+   "https://github.com/wting/autojump.git": "06e082c91805cb022900819b2e0881eeae780d58"
+  },
+  {
+   "https://github.com/audreyr/cookiecutter.git": "3bc7b987e4ae9dcee996ae0b00375c1325b8d866"
+  },
+  {
+   "https://github.com/kivy/kivy.git": "bacc46ac6b1f10389f16c89bc16d48a85cc2d012"
+  },
+  {
+   "https://github.com/google/yapf.git": "ba85e7cf5bbee70a74f0c2090e86eff4748a30fe"
+  },
+  {
+   "https://github.com/matplotlib/matplotlib.git": "dd18211687623c5fa57658990277440814d422f0"
+  },
+  {
+   "https://github.com/RaRe-Technologies/gensim.git": "b27d6ea11792bb658bfe4b605054a23bfb6c6c81"
+  },
+  {
+   "https://github.com/Miserlou/Zappa.git": "3ccf7490a8d8b8fa74a61ee39bf44234f3567739"
+  },
+  {
+   "https://github.com/Theano/Theano.git": "9feed78682c9f18754345ef9ed6cda5b89de2434"
+  },
+  {
+   "https://github.com/getpelican/pelican.git": "de71f39232947014149436a4205029d3a1b39f3e"
+  },
+  {
+   "https://github.com/beetbox/beets.git": "818f5bd07ba1c584fc71fdb3b27b026b31cacc1e"
+  },
+  {
+   "https://github.com/quantopian/zipline.git": "24cc4f52a2c0fa66581c0c5d9d5b6ed8f8e6e324"
+  },
+  {
+   "https://github.com/ambv/black.git": "cea13f498418784e22f8fbd78db3f9240a2bad11"
+  },
+  {
+   "https://github.com/plotly/dash.git": "33a8baac613f0e40ba90c5cf0d51360ac48d0462"
+  },
+  {
+   "https://github.com/facebook/prophet.git": "a31a93480a68af1e4063a54c085d933d91ad04a5"
+  },
+  {
+   "https://github.com/gunthercox/ChatterBot.git": "7d0755ff71747faca33a430f66dd88047b638fa6"
+  },
+  {
+   "https://github.com/codelucas/newspaper.git": "9b89046d076b244fef006aee1a485b1f6e537bdf"
+  },
+  {
+   "https://github.com/dbcli/pgcli.git": "098a2cf976dff387e324db334cc5fbd17cbd1bc1"
+  },
+  {
+   "https://github.com/joke2k/faker.git": "31fefaee58141498d2ab8a1a07cbb836a7501613"
+  },
+  {
+   "https://github.com/nltk/nltk.git": "f54c22517650b699e4b136ae47b030589db90155"
+  },
+  {
+   "https://github.com/timgrossmann/InstaPy.git": "bddf210b94e53c0d4d9c0d35215e483d31a93773"
+  },
+  {
+   "https://github.com/mkdocs/mkdocs.git": "eb5f3f84e533cff42e13492af2a5e1ab391865e9"
+  },
+  {
+   "https://github.com/rushter/MLAlgorithms.git": "874d9b78964c30f01cca4dab47ee87bc32fdce19"
+  },
+  {
+   "https://github.com/postmanlabs/httpbin.git": "f8ec666b4d1b654e4ff6aedd356f510dcac09f83"
+  },
+  {
+   "https://github.com/wifiphisher/wifiphisher.git": "c27c2ab1ef9c5c3aad6f9643acb9170cf2c45a73"
+  },
+  {
+   "https://github.com/dbcli/mycli.git": "83ed16f1ffc5ca8c5188225dca736bfa16ce7c56"
+  },
+  {
+   "https://github.com/python-telegram-bot/python-telegram-bot.git": "984bea16d197df950c7a752a3888932b0ecb86ad"
+  },
+  {
+   "https://github.com/eliangcs/http-prompt.git": "189321f25e3526fa1b79a9dc38c317892c478986"
+  },
+  {
+   "https://github.com/aio-libs/aiohttp.git": "fc49f9760caf36c47751b84c7c9a47cc17b43098"
+  },
+  {
+   "https://github.com/andymccurdy/redis-py.git": "2652c6bfd1a268ce4e042dad93694206c2dd788f"
+  },
+  {
+   "https://github.com/pallets/click.git": "c6042bf2607c5be22b1efef2e42a94ffd281434c"
+  },
+  {
+   "https://github.com/waditu/tushare.git": "d89722198033665d393c3f27e4c00aadc22808d1"
+  },
+  {
+   "https://github.com/darknessomi/musicbox.git": "1234e66b4ccbf43f2774a0e8b3a00e8e226cf060"
+  },
+  {
+   "https://github.com/falconry/falcon.git": "0f219f673b742341c95138d27932e879f26378a5"
+  },
+  {
+   "https://github.com/ray-project/ray.git": "bb207a205bde6cdd7e378ed6643d8cc1e8479659"
+  },
+  {
+   "https://github.com/Jack-Cherish/python-spider.git": "31b95a08e122b7617d6bd1197de2c91baaa96388"
+  },
+  {
+   "https://github.com/donnemartin/gitsome.git": "d98a91bcee2f7ca8914646e62785cffc1d9fb9c4"
+  },
+  {
+   "https://github.com/boto/boto.git": "91ba037e54ef521c379263b0ac769c66182527d7"
+  },
+  {
+   "https://github.com/coleifer/peewee.git": "9f43151f222fefe2a5d6dd9ba09196273d2d23c7"
+  },
+  {
+   "https://github.com/ShangtongZhang/reinforcement-learning-an-introduction.git": "3827b0a1fd7c5ac3e838dd61151550940a8ff73c"
+  },
+  {
+   "https://github.com/bottlepy/bottle.git": "a454029f6e8a087e5cb570eb6ee36c2087d26e4d"
+  },
+  {
+   "https://github.com/sloria/TextBlob.git": "807f8a2df474db504ee9a5f2d8604a3386305764"
+  },
+  {
+   "https://github.com/miguelgrinberg/flasky.git": "83d3614e9ff9fc8289758030d782542a77942cff"
+  },
+  {
+   "https://github.com/seatgeek/fuzzywuzzy.git": "778162c5a73256745eb6ae22f925bc2dbcf7c894"
+  },
+  {
+   "https://github.com/amueller/word_cloud.git": "64ff55ea10751deac3381fbc268c47827704a2c3"
+  },
+  {
+   "https://github.com/prompt-toolkit/python-prompt-toolkit.git": "9e3845abe9d3cd64c096eaba8d890943f86b8954"
+  },
+  {
+   "https://github.com/samuelclay/NewsBlur.git": "ed8d3c76e67c63b16d041114986d206e0be16068"
+  },
+  {
+   "https://github.com/paramiko/paramiko.git": "cf7d49d66f3b1fbc8b0853518a54050182b3b5eb"
+  },
+  {
+   "https://github.com/pyinstaller/pyinstaller.git": "b54a15d72e81e39cde0811d2b7442b09e658801d"
+  },
+  {
+   "https://github.com/kivy/python-for-android.git": "545413ebea45a1eabf16d3950057cfb4a22b84b3"
+  },
+  {
+   "https://github.com/pyro-ppl/pyro.git": "9325a69b9c32fb42be2dfb439e061b40d2100627"
+  },
+  {
+   "https://github.com/python-pillow/Pillow.git": "ee063af32fb4178138a06691c70c8a9763676f5a"
+  },
+  {
+   "https://github.com/pallets/jinja.git": "fd89fed7456e755e33ba70674c41be5ab222e193"
+  },
+  {
+   "https://github.com/dbader/schedule.git": "5d2653c28b1029f1e9ddc85cd9ef26c29a79fcea"
+  },
+  {
+   "https://github.com/tweepy/tweepy.git": "cc3c8e7cae73d28b9a75edb7342f89f04da99702"
+  }
+ ]
+}
