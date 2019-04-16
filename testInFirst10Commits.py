@@ -1,6 +1,7 @@
 from pydriller import RepositoryMining, GitRepository
 import json
 import os
+from scipy import stats
 
 
 fileTypes = ["java", "py", "js"] # List of all language types to check
@@ -200,11 +201,12 @@ def main():
         os.mkdir("./results/" + graphName)
     except:
         pass
-
+    all_results = []
     for i in fileTypes:
         allFiles = os.listdir("./results/first10/" + i)
         total_files = 0
         has_tests = 0
+        file_type_results = []
         for f in allFiles:
             fileName = f
             f = "./results/first10/" + i + "/" + f
