@@ -42,5 +42,11 @@ for i in fileTypes:
     print(total_fixes_with_tests/total_fixes, "% of fixes")
     print("\n\n")
 
+try:
+    os.mkdir("./results/bugfixstats/" )
+except:
+    pass
 print(stats.kruskal(all_results[0], all_results[1], all_results[2]))
-
+outfile = './results/bugfixstats/kruskal.txt'
+outfile_fp = open(outfile, 'w')
+outfile_fp.write(str(stats.kruskal(all_results[0], all_results[1], all_results[2])))
