@@ -62,7 +62,7 @@ def makeGraph( fileType, i):
 
     fileName = fileName.split(".json")[0]
    
-    ax.set(xlabel="Commit #", ylabel="Percentage(%)", title="Percentage of Test Material vs Total (" + (fileName) + ")")
+    ax.set(xlabel="Commit #", ylabel="Percentage(%)", title="Percentage of Test Material vs Total Material")
     ax.grid()
     plt.ylim(0, 100)
 
