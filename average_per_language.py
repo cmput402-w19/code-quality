@@ -66,7 +66,8 @@ def average_for_file_type(data,fileType):
     fig, ax = plt.subplots()
     ax.plot(x, y, label="Average of proportion of test code for {} repo".format(fileType))
     ax.legend()
-    
+
+    plt.xlim(0, 20000)   
     plt.ylim(0, 100)   
     ax.set(xlabel="Commit #", ylabel="Proportion of test code", title="Average proportion of test code for {} repos".format(fileType))
     ax.grid()
