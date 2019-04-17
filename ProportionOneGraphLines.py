@@ -74,7 +74,7 @@ def makeGraph( fileType, i):
 
    
    
-    ax.set(xlabel="Commit #", ylabel="Percentage(%)", title="Percentage of Test Code Lines vs Total Tilnes")
+    ax.set(xlabel="Commit #", ylabel="Percentage(%)", title="Percentage of Test Code Lines vs Total Lines")
     ax.grid()
     plt.ylim(0, 100)
         # Ignore commits past a point
